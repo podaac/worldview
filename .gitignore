@@ -35,3 +35,10 @@ config/default/release/layer-metadata
 # Jest
 /coverage
 /tasks/temp
+
+/.cache/
+/.config/
+/.local/
+/.npm/
+/.idea
+.bash_history
