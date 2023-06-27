@@ -41,8 +41,7 @@ test('Select "Cloud Effective Radius" layer and check that it is available for d
   await allCategoryHeader.click()
   if (process.env.SOTO === 'true') {
     await layersSearchField.fill('cloud effective radius')
-  }
-  else {
+  } else {
     await page.locator('#accordion-legacy-all-cloud-effective-radius').click()
   }
   await page.locator('#MODIS_Aqua_Cloud_Effective_Radius-checkbox').click()

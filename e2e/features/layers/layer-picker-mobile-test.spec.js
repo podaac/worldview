@@ -19,8 +19,7 @@ test.beforeAll(async ({ browser }) => {
   selectors = createSelectors(page)
   if (process.env.SOTO === 'true') {
     expectedLayerCount = 8
-  }
-  else {
+  } else {
     expectedLayerCount = 7
   }
 })
@@ -73,8 +72,7 @@ test('Clicking a measurement shows choices, indicates unavailability', async () 
     // await expect(brandsAvailableCoverage).toBeVisible()
     // await expect(orbitAvailableCoverage).toBeVisible()
     sourceTabCount = 5
-  }
-  else {
+  } else {
     await aodAllMeasurement.click()
     await expect(sourceMetadataCollapsed).toBeVisible()
     await expect(aodCheckboxMAIAC).toBeVisible()
@@ -102,8 +100,7 @@ test('Available grid source layer measuremet does not have unavaiable coverage c
     await expect(crCheckboxTerraBands367).toBeVisible()
     await expect(crCheckboxTerraBands367).not.toHaveClass('unavailable')
     await crAquaModisTab.click()
-  }
-  else {
+  } else {
     await aquaTerraMODISTab.click()
     await aquaModisTab.click()
     await expect(aodCheckbox).toBeVisible()
@@ -121,8 +118,7 @@ test('Expanding and collapsing measurement details', async () => {
   await page.locator('.ellipsis').click()
   if (process.env.SOTO === 'true') {
     await expect(crAquaModisHeader).toContainText('MODIS Corrected Reflectance vs. MODIS Surface Reflectance')
-  }
-  else {
+  } else {
     await expect(aquaTerraModisHeader).toContainText('About Aerosol Optical Depth (AOD)')
   }
   const ellipsis = page.locator('.ellipsis.up')
@@ -146,8 +142,7 @@ test('Switching source tabs', async () => {
     await expect(crAquaModisHeader).toBeVisible()
     await expect(crAquaModisHeader).toContainText('MODIS Corrected Reflectance vs. MODIS Surface Reflectance')
     await crCheckboxTerraBands367.click()
-  }
-  else {
+  } else {
     await aquaModisTab.click()
     await expect(aodCheckbox).toBeVisible()
     await expect(aquaTerraModisHeader).toBeVisible()

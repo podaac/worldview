@@ -39,7 +39,7 @@ test('Enabled Corrected Reflectance layers are shown as checked', async () => {
     await expect(correctedReflectanceChecked).toBeVisible().catch(() => {
       isChecked = false
     })
-    if(isChecked.valueOf() != true) {
+    if (isChecked.valueOf() !== true) {
       await crCheckboxMODISTrueColor.click()
     }
   }
@@ -238,8 +238,7 @@ test('Selecting a measurement from the grid shows sources and details for first 
     // await expect(trueColorAvailableCoverage).toBeVisible()
     // await expect(brandsAvailableCoverage).toBeVisible()
     // await expect(orbitAvailableCoverage).toBeVisible()
-  }
-  else {
+  } else {
     await aodMeasurement.click()
     await expect(layerDetailHeader).toContainText('Aqua and Terra/MODIS')
     await expect(aodCheckboxMODIS).toBeVisible()
@@ -268,8 +267,7 @@ test('Available grid source layer measuremet does not have unavaiable coverage i
     const modisAvailabilityInfo = await page.locator('#MODIS_Aqua_CorrectedReflectance_Bands367-checkbox + svg#availability-info')
     await expect(modisAvailabilityInfo).not.toBeVisible()
     await crAquaModisTab.click()
-  }
-  else {
+  } else {
     await aquaModisTab.click()
     await expect(layerDetailHeader).toContainText('Aqua/MODIS')
     await expect(aodCheckboxAquaMODIS).toBeVisible()
@@ -299,8 +297,7 @@ test('Selecting layers from product picker adds them to the sidebar/map', async 
     await layersModalCloseButton.click()
     await expect(crSidebarMODISTrueColorLayer).toBeVisible()
     await expect(crSidebarMODISBands721Layer).toBeVisible()
-  }
-  else {
+  } else {
     await aodCheckboxMODIS.click()
     await aodCheckboxMAIAC.click()
     await layerPickerBackButton.click()
