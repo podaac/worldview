@@ -49,6 +49,7 @@ jobs:
           npm run start &
           npx playwright install firefox &
           sleep 10
-          SOTO=true npx playwright test --project=firefox --reporter=list
+          set SOTO=true
+          npx playwright test --project=firefox --reporter=list
 
 
