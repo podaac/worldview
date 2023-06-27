@@ -34,12 +34,15 @@ test('Enabled Corrected Reflectance layers are shown as checked', async () => {
   } = selectors
   await allCategoryHeader.click()
   await page.locator('#accordion-legacy-all-corrected-reflectance').click()
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     let isChecked = true
     await expect(correctedReflectanceChecked).toBeVisible().catch(() => {
-      isChecked = false })
+      isChecked = false
+    })
     if(isChecked.valueOf() != true) {
-      await crCheckboxMODISTrueColor.click() }}
+      await crCheckboxMODISTrueColor.click()
+    }
+  }
   await expect(correctedReflectanceChecked).toBeVisible()
 })
 
@@ -205,7 +208,7 @@ test('Switching to "Science Disciplines" tab updates category/measurement choice
   await expect(oceans).toBeVisible()
   await expect(terrestrialHydrosphere).toBeVisible()
   await expect(scientificOther).toBeVisible()
-  if (process.env.SOTO != 'true') {
+  if (process.env.SOTO !== 'true') {
     await expect(biosphere).toBeVisible()
     await expect(humanDimensions).toBeVisible()
     await expect(spectralEngineering).toBeVisible()
@@ -223,7 +226,7 @@ test('Selecting a measurement from the grid shows sources and details for first 
     crCheckboxMODISBands721,
     crCheckboxOrbitAscending
   } = selectors
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await crScientificAllMeasurement.click()
     await expect(layerDetailHeader).toContainText('Aqua/MODIS')
     await expect(crCheckboxMODISTrueColor).toBeVisible()
@@ -258,7 +261,7 @@ test('Available grid source layer measuremet does not have unavaiable coverage i
     crCheckboxTerraBands367,
     crAquaModisTab
   } = selectors
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await crTerraModisTab.click()
     await expect(layerDetailHeader).toContainText('Terra/MODIS')
     await expect(crCheckboxTerraBands367).toBeVisible()
@@ -289,7 +292,7 @@ test('Selecting layers from product picker adds them to the sidebar/map', async 
     crSidebarMODISTrueColorLayer,
     crSidebarMODISBands721Layer
   } = selectors
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await crCheckboxMODISTrueColor.click()
     await crCheckboxMODISBands721.click()
     await layerPickerBackButton.click()

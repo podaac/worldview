@@ -26,7 +26,7 @@ test('Verify default page shows projection toolbar button in geographic projecti
 })
 
 test('Verify changing projection to arctic switches map to arctic', async () => {
-  if (process.env.SOTO === 'true'){
+  if (process.env.SOTO === 'true') {
     test.skip(true, '2nd Polar change is hidden by something: <iframe src="about:blank" id="react-refresh-overlay"></iframe> intercepts pointer events')
   }
   const { arcticMap } = selectors
@@ -35,7 +35,7 @@ test('Verify changing projection to arctic switches map to arctic', async () => 
 })
 
 test('Verify changing projection to antarctic switches map to antarctic', async () => {
-  if (process.env.SOTO === 'true'){
+  if (process.env.SOTO === 'true') {
     test.skip(true, '2nd Polar change is hidden by something: <iframe src="about:blank" id="react-refresh-overlay"></iframe> intercepts pointer events')
   }
   const { antarcticMap } = selectors

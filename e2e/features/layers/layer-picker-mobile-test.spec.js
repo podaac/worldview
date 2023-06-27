@@ -17,8 +17,12 @@ test.beforeAll(async ({ browser }) => {
   })
   page = await context.newPage()
   selectors = createSelectors(page)
-  if (process.env.SOTO === 'true') { expectedLayerCount = 8 }
-  else { expectedLayerCount = 7 }
+  if (process.env.SOTO === 'true') {
+    expectedLayerCount = 8
+  }
+  else {
+    expectedLayerCount = 7
+  }
 })
 
 test.afterAll(async () => {
@@ -57,7 +61,7 @@ test('Clicking a measurement shows choices, indicates unavailability', async () 
     crCheckboxOrbitAscending
   } = selectors
   let sourceTabCount = 8
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await crAllMeasurement.click()
     await expect(crCheckboxMODISTrueColor).toBeVisible()
     await expect(crCheckboxMODISBands721).toBeVisible()
@@ -92,7 +96,7 @@ test('Available grid source layer measuremet does not have unavaiable coverage c
     crTerraModisTab,
     crCheckboxTerraBands367
   } = selectors
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await crAquaModisTab.click()
     await crTerraModisTab.click()
     await expect(crCheckboxTerraBands367).toBeVisible()
@@ -115,7 +119,7 @@ test('Expanding and collapsing measurement details', async () => {
     crAquaModisHeader
   } = selectors
   await page.locator('.ellipsis').click()
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await expect(crAquaModisHeader).toContainText('MODIS Corrected Reflectance vs. MODIS Surface Reflectance')
   }
   else {
@@ -136,7 +140,7 @@ test('Switching source tabs', async () => {
     crAquaModisHeader,
     crCheckboxTerraBands367
   } = selectors
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     await crTerraModisTab.click()
     await expect(crCheckboxTerraBands367).toBeVisible()
     await expect(crAquaModisHeader).toBeVisible()
@@ -197,7 +201,7 @@ test('Searching for layers', async () => {
     layersSearchRow,
     aodCheckbox
   } = selectors
-  let filteredElementCount = 17
+  const filteredElementCount = 17
   await layersSearchField.fill('aerosol optical depth')
   await expect(layersSearchRow).toHaveCount(filteredElementCount)
   await expect(aodCheckbox).toBeVisible()

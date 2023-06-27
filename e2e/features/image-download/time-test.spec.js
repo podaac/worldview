@@ -25,7 +25,7 @@ test.afterAll(async () => {
 })
 
 test('Image for today', async () => {
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     test.skip(true, 'Bug Reported for SOTO: https://github.com/podaac/worldview/issues/33')
   }
   const todayDate = '2018-06-01'
@@ -39,11 +39,11 @@ test('Image for today', async () => {
 })
 
 test('Image for yesterday', async () => {
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     test.skip(true, 'Bug Reported for SOTO: https://github.com/podaac/worldview/issues/33')
   }
   const todayDate = '2018-06-01'
-  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(1, 'days').format('YYYY-MM-DD').toUpperCase();
+  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(1, 'days').format('YYYY-MM-DD').toUpperCase()
   const url = await joinUrl(startParams, '&now=' + todayDate + 'T0')
   await page.goto(url)
   await openImageDownloadPanel(page)

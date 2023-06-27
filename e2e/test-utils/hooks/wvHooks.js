@@ -76,7 +76,7 @@ const assertDefaultLayers = async (page, expectedLayerCount) => {
   await expect(refLabels).toBeVisible()
   await expect(refFeatures).toBeVisible()
   await expect(coastlines).toBeVisible()
-  if (process.env.SOTO != 'true') {
+  if (process.env.SOTO !== 'true') {
     await expect(trueColorSNPP).toBeVisible()
     await expect(trueColorAqua).toBeVisible()
     await expect(trueColorMODIS).toBeVisible()
@@ -105,7 +105,7 @@ const assertCategories = async (page) => {
   await expect(shipping).toBeVisible()
   await expect(storms).toBeVisible()
   await expect(other).toBeVisible()
-  if (process.env.SOTO != 'true') {
+  if (process.env.SOTO !== 'true') {
     await expect(airQuality).toBeVisible()
     await expect(ashPlumes).toBeVisible()
     await expect(fires).toBeVisible()

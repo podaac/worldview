@@ -8,7 +8,7 @@ let selectors
 
 test.describe.configure({ mode: 'serial' })
 
-if(process.env.SOTO === 'true') {
+if (process.env.SOTO === 'true') {
   test.skip(true, 'Bug Reported for SOTO: https://github.com/podaac/worldview/issues/33')
 }
 
@@ -27,7 +27,7 @@ test.afterAll(async () => {
 test('date.mob.init.2a: Before 3:00 UTC: load yesterdays date', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const todayDate = '2013-03-15'
-  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(1, 'days').format('YYYY MMM DD').toUpperCase();
+  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(1, 'days').format('YYYY MMM DD').toUpperCase()
   const queryString = 'http://localhost:3000/?now=' + todayDate + 'T0'
   await page.goto(queryString)
   await expect(mobileDatePickerSelectBtn).toContainText(expectedDate)
@@ -44,7 +44,7 @@ test('date.mob.init.2b: Before 3:00 UTC: right button is not disabled', async ()
 test('date.mob.init.3a: After 3:00 UTC: load todays date', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const todayDate = '2013-03-15'
-  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(0, 'days').format('YYYY MMM DD').toUpperCase();
+  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(0, 'days').format('YYYY MMM DD').toUpperCase()
   const queryString = 'http://localhost:3000/?now=' + todayDate + 'T4'
   await page.goto(queryString)
   await expect(mobileDatePickerSelectBtn).toContainText(expectedDate)
@@ -59,7 +59,7 @@ test('date.mob.init.3b:After 3:00 UTC: right button is disabled', async () => {
 test('date.mob.range.1: Date label should show 2013-03-15', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const todayDate = '2013-03-15'
-  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(0, 'days').format('YYYY MMM DD').toUpperCase();
+  const expectedDate = moment.utc(todayDate, 'YYYY-MM-DD').subtract(0, 'days').format('YYYY MMM DD').toUpperCase()
   const queryString = 'http://localhost:3000/?now=' + todayDate + 'T2'
   await page.goto(queryString)
   await expect(mobileDatePickerSelectBtn).toContainText(expectedDate)
