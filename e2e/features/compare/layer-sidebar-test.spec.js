@@ -5,14 +5,12 @@ const { swipeAndAIsActive } = require('../../test-utils/global-variables/queryst
 
 let page
 let selectors
-let aodMAIACCheckbox
 
 test.describe.configure({ mode: 'serial' })
 
 test.beforeAll(async ({ browser }) => {
   page = await browser.newPage()
   selectors = createSelectors(page)
-  aodMAIACCheckbox = page.locator('#checkbox-case-MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth .wv-checkbox input')
 })
 
 test.afterAll(async () => {

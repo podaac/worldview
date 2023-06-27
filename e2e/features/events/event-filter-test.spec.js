@@ -16,8 +16,7 @@ test.beforeAll(async ({ browser }) => {
   selectors = createSelectors(page)
   if (process.env.SOTO === 'true') {
     dayDisplacement = 2
-  }
-  else {
+  } else {
     dayDisplacement = 0
   }
 })
