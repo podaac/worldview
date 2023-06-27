@@ -48,7 +48,7 @@ test('Share link clipboard with existing time query string param in the page url
 })
 
 test('Share link clipboard with no time query string param in the page url will have the same serialized time (partial YYYY-MM-DD)', async () => {
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     test.skip(true, 'Bug Reported for SOTO: https://github.com/podaac/worldview/issues/34')
   }
   const { shareToolbarButton } = selectors
@@ -87,7 +87,7 @@ test('Clicking the social tab displays social share buttons', async () => {
 })
 
 test('Clicking Shorten link works with links less than 2049 characters', async () => {
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     test.skip(true, 'Feature is not present in SOTO')
   }
   const { shareToolbarButton } = selectors
@@ -100,7 +100,7 @@ test('Clicking Shorten link works with links less than 2049 characters', async (
 })
 
 test('Clicking Shorten link is refused with links greater than 2048 characters', async () => {
-  if(process.env.SOTO === 'true') {
+  if (process.env.SOTO === 'true') {
     test.skip(true, 'Feature is not present in SOTO')
   }
   const { shareToolbarButton } = selectors
