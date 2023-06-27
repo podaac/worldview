@@ -52,6 +52,9 @@ test('Left timeline arrow will not be disabled by default', async () => {
 })
 
 test('Right timeline arrow will be disabled by default', async () => {
+  if (process.env.SOTO === 'true') {
+    test.skip(true, 'Bug Reported for SOTO: https://github.com/podaac/worldview/issues/33')
+  }
   const queryString = 'http://localhost:3000/'
   await page.goto(queryString)
   await page.getByRole('button', { name: '×' }).click()
@@ -60,6 +63,9 @@ test('Right timeline arrow will be disabled by default', async () => {
 })
 
 test('Now button will be disabled by default', async () => {
+  if (process.env.SOTO === 'true') {
+    test.skip(true, 'Bug Reported for SOTO: https://github.com/podaac/worldview/issues/33')
+  }
   const queryString = 'http://localhost:3000/'
   await page.goto(queryString)
   await page.getByRole('button', { name: '×' }).click()
