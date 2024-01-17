@@ -48,30 +48,6 @@ test('Select "Cloud Effective Radius" layer and check that it is available for d
   await expect(granuleCountInfo).toBeVisible()
 })
 
-test('Select "Cloud Effective Radius" layer and check that it is available for download', async () => {
-  const {
-    addLayers,
-    allCategoryHeader,
-    layersTab,
-    layersModalCloseButton,
-    dataDownloadTabButton
-  } = selectors
-  await layersTab.click()
-  await addLayers.click()
-  await allCategoryHeader.click()
-  await page.locator('#accordion-legacy-all-cloud-effective-radius').click()
-  await page.locator('#MODIS_Aqua_Cloud_Effective_Radius-checkbox').click()
-  await layersModalCloseButton.click()
-  await dataDownloadTabButton.click()
-  await page.locator('#C1443536017-LAADS-MODIS_Aqua_Cloud_Effective_Radius-collection-choice-label').click()
-  const granuleCountHeader = await page.locator('.granule-count-header')
-  const granuleCountInfo = await page.locator('.granule-count-info')
-  await expect(granuleCountHeader).toContainText('Available granules for 2019 DEC 01:')
-  await expect(granuleCountInfo).toBeVisible()
-  await page.locator('#chk-crop-toggle').click()
-  await expect(granuleCountInfo).toBeVisible()
-})
-
 test('Arriving via permalink, data tab selected and granule count shows', async () => {
   const { dataDownloadTabButton, modalCloseButton } = selectors
   const permalinkParams = 'http://localhost:3000/?l=GHRSST_L4_MUR_Sea_Surface_Temperature,MODIS_Aqua_Aerosol_Optical_Depth_3km&lg=true&sh=MODIS_Aqua_Aerosol_Optical_Depth_3km,C1443528505-LAADS&t=2020-02-06-T06%3A00%3A00Z'
