@@ -21,7 +21,6 @@ test('Make sure that 4 fire layers are not present in layer list: use mock', asy
   const { modalCloseButton, sidebarEvent, thermAnomSNPPday, thermAnomSNPPnight, thermAnomVIIRSday, thermAnomVIIRSnight } = selectors
   test.skip(browserName === 'firefox', 'firefox cant find iceberg event sometimes')
   test.skip(process.env.SOTO === 'true', 'SOTO does not contain the layers')
-  const { sidebarEvent, thermAnomSNPPday, thermAnomSNPPnight, thermAnomVIIRSday, thermAnomVIIRSnight } = selectors
   await page.goto(mockEvents)
   await modalCloseButton.click()
   await expect(sidebarEvent).toBeVisible()
