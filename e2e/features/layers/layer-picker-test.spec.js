@@ -45,7 +45,7 @@ test('"Unavailable" layers show unavailable icon and tooltip', async () => {
 test('Entering search text transitions to search mode', async () => {
   const { layersSearchField, layersSearchRow } = selectors
   await layersSearchField.fill('ozone')
-  await expect(layersSearchRow).toHaveCount(6)
+  await expect(layersSearchRow).toHaveCount(10)
 })
 
 test('Updating input changes results', async () => {
@@ -155,8 +155,8 @@ test('Disabling coverage filter updates list', async () => {
   } = selectors
   await availableFilterCheckbox.click()
   await expect(availableFilterCheckboxInput).not.toBeChecked()
-  await expect(layersSearchRow).toHaveCount(12)
-  await expect(layerResultsCountText).toContainText('Showing 12 out of')
+  await expect(layersSearchRow).toHaveCount(14)
+  await expect(layerResultsCountText).toContainText('Showing 14 out of')
 })
 
 test('Finding layer by ID with search', async () => {
@@ -204,11 +204,13 @@ test('Switching to "Science Disciplines" tab updates category/measurement choice
 test('Selecting a measurement from the grid shows sources and details for first source', async () => {
   const {
     aodMeasurement,
+    aquaTerraMODISTab,
     layerDetailHeader,
     aodCheckboxMODIS,
     aodCheckboxMAIAC
   } = selectors
   await aodMeasurement.click()
+  await aquaTerraMODISTab.click()
   await expect(layerDetailHeader).toContainText('Aqua and Terra/MODIS')
   await expect(aodCheckboxMODIS).toBeVisible()
   await expect(aodCheckboxMAIAC).toBeVisible()
@@ -254,7 +256,7 @@ test('Collapsed sidebar shows updated layer count', async () => {
   const { collapsedLayerButton } = selectors
   await page.locator('#toggleIconHolder').click()
   const layerCount = await page.locator('.layer-count')
-  await expect(layerCount).toContainText('9 Layers')
+  await expect(layerCount).toContainText('10 Layers')
   await collapsedLayerButton.click()
 })
 

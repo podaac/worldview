@@ -16,7 +16,7 @@ function EIC() {
 
   const requestBestDate = async () => {
     try {
-      const url = `https://uhkookzof2.execute-api.us-west-2.amazonaws.com/dev/scenarios?item_type=scenario&item_id=${scenario}`;
+      const url = `https://worldview.earthdata.nasa.gov/eic/scenarios?item_type=scenario&item_id=${scenario}`;
       const response = await fetch(url, { timeout: 10000 });
       if (!response.ok) {
         throw new Error('Network response was not ok.');
@@ -25,7 +25,7 @@ function EIC() {
       const resolutionDate = data.resolution_date;
 
       if (resolutionDate === 'No valid date found') {
-        console.error('No valid date found, using EIC Legacy mode');
+        console.warn('No valid date found, using EIC Legacy mode');
         setEICLegacy(true);
         return;
       }
@@ -33,7 +33,7 @@ function EIC() {
       const dateObj = new Date(resolutionDate);
       selectDate(dateObj);
     } catch (error) {
-      console.error('Error fetching the best date, using EIC Legacy mode:', error);
+      console.warn('Error fetching the best date, using EIC Legacy mode:', error);
       setEICLegacy(true);
     }
   };

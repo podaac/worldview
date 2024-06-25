@@ -27,7 +27,7 @@ test('Initial state indicates layer count', async () => {
   await page.goto(url)
   await closeModal(page)
   await expect(layerCount).toBeVisible()
-  await expect(layerCount).toContainText('7')
+  await expect(layerCount).toContainText('8')
 })
 
 test('Expand layer list and show default layers', async () => {
@@ -45,12 +45,14 @@ test('Open product picker and show categories by default', async () => {
 test('Clicking a measurement shows choices, indicates unavailability', async () => {
   const {
     aodAllMeasurement,
+    aquaTerraMODISTab,
     sourceMetadataCollapsed,
     aodCheckboxMAIAC,
     aodCheckboxMODIS,
     sourceTabs
   } = selectors
   await aodAllMeasurement.click()
+  await aquaTerraMODISTab.click()
   await expect(sourceMetadataCollapsed).toBeVisible()
   await expect(aodCheckboxMAIAC).toBeVisible()
   await expect(aodCheckboxMODIS).toBeVisible()
@@ -58,7 +60,7 @@ test('Clicking a measurement shows choices, indicates unavailability', async () 
   // const maiacAvailableCoverage = page.locator('#MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth-checkbox + svg#availability-info')
   await expect(modisAvailableCoverage).toBeVisible()
   // await expect(maiacAvailableCoverage).toBeVisible()
-  await expect(sourceTabs).toHaveCount(9)
+  await expect(sourceTabs).toHaveCount(10)
 })
 
 test('Available grid source layer measuremet does not have unavaiable coverage class', async () => {
@@ -140,7 +142,7 @@ test('Searching for layers', async () => {
     aodCheckbox
   } = selectors
   await layersSearchField.fill('aerosol optical depth')
-  await expect(layersSearchRow).toHaveCount(17)
+  await expect(layersSearchRow).toHaveCount(19)
   await expect(aodCheckbox).toBeVisible()
 })
 
@@ -187,5 +189,5 @@ test('Collapse sidebar and confirm layer count updated', async () => {
   const { layerCount } = selectors
   await page.locator('.layer-btn-close').click()
   await page.locator('#toggleIconHolder').click()
-  await expect(layerCount).toContainText('8')
+  await expect(layerCount).toContainText('9')
 })
