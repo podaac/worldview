@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Dust_Surface_Mass_Concentration_Monthly": {
+      "id": "MERRA2_Dust_Surface_Mass_Concentration_Monthly",
+      "description": "merra/MERRA2_Dust_Surface_Mass_Concentration_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Dust"
+    }
+  }
+}

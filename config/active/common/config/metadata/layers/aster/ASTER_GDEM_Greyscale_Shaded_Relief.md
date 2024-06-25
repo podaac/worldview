@@ -1,0 +1,1 @@
+The ASTER Global Digital Elevation Model (GDEM) Greyscale Shaded Relief layer shows surface elevation as shaded relief in shades of grey. Features such as mountains, valleys, plateaus and canyons with steep slopes will appear more rough, while flat areas will appear more smooth.

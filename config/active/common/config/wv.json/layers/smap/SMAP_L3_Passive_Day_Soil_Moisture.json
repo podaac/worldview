@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L3_Passive_Day_Soil_Moisture": {
+      "id": "SMAP_L3_Passive_Day_Soil_Moisture",
+      "description": "smap/SMAP_L3_Passive_Day_Soil_Moisture",
+      "group": "overlays",
+      "layergroup": "Soil Moisture",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "layers": {
+    "GRUMP_Settlements": {
+      "id": "GRUMP_Settlements",
+      "description": "sedac/GRUMP_Settlements",
+      "type": "vector",
+      "tags": "vectors",
+      "group": "overlays",
+      "layergroup": "Socioeconomic",
+      "palette": {
+        "id": "GRUMP_Settlements",
+        "immutable": true
+      },
+      "wrapX": true,
+      "vectorStyle": {
+        "id": "GRUMP_Settlements"
+      },
+      "breakPointLayer": {
+        "id": "GRUMP_Settlements",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.017578125
+          }
+        }
+      }
+    }
+  }
+}

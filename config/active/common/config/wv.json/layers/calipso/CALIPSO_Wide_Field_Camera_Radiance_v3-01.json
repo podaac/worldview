@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "CALIPSO_Wide_Field_Camera_Radiance_v3-01": {
+      "id": "CALIPSO_Wide_Field_Camera_Radiance_v3-01",
+      "description": "calipso/CALIPSO_Wide_Field_Camera_Radiance_v3-01",
+      "group": "overlays",
+      "layergroup": "Radiance"
+    }
+  }
+}

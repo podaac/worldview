@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "OMI_UV_Erythemal_Daily_Dose": {
+      "id": "OMI_UV_Erythemal_Daily_Dose",
+      "description": "omi/OMI_UV_Erythemal_Daily_Dose",
+      "group": "overlays",
+      "layergroup": "Radiation",
+      "tags": "ultra violet"
+    }
+  }
+}

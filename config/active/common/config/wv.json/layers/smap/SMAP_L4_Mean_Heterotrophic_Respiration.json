@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Mean_Heterotrophic_Respiration": {
+      "id": "SMAP_L4_Mean_Heterotrophic_Respiration",
+      "description": "smap/SMAP_L4_Mean_Heterotrophic_Respiration",
+      "group": "overlays",
+      "layergroup": "Heterotrophic Respiration",
+      "wrapadjacentdays": true
+    }
+  }
+}

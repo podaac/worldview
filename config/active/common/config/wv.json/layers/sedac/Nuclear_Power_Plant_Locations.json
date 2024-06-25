@@ -1,0 +1,32 @@
+{
+  "layers": {
+    "Nuclear_Power_Plant_Locations": {
+      "id": "Nuclear_Power_Plant_Locations",
+      "description": "sedac/Nuclear_Power_Plant_Locations",
+      "group": "overlays",
+      "type": "vector",
+      "tags": "vectors",
+      "layergroup": "Socioeconomic",
+      "palette": {
+        "id": "Nuclear_Power_Plant_Locations",
+        "immutable": true
+      },
+      "vectorStyle": {
+        "id": "Nuclear_Power_Plant_Locations"
+      },
+      "wrapX": true,
+      "breakPointLayer": {
+        "id": "Nuclear_Power_Plant_Locations",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.03515625
+          }
+        }
+      }
+    }
+  }
+}

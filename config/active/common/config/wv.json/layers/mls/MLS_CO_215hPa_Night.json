@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MLS_CO_215hPa_Night": {
+      "id": "MLS_CO_215hPa_Night",
+      "description": "mls/MLS_CO_215hPa_Night",
+      "tags": "co",
+      "group": "overlays",
+      "layergroup": "Carbon Monoxide"
+    }
+  }
+}

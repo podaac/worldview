@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "OMI_Nitrogen_Dioxide_Tropo_Column": {
+      "id": "OMI_Nitrogen_Dioxide_Tropo_Column",
+      "description": "omi/OMI_Nitrogen_Dioxide_Tropo_Column",
+      "group": "overlays",
+      "layergroup": "Nitrogen Dioxide",
+      "tags": "no2"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MISR_Radiance_Average_Natural_Color_Monthly": {
+      "id": "MISR_Radiance_Average_Natural_Color_Monthly",
+      "description": "misr/MISR_Radiance_Average_Natural_Color_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Radiance"
+    }
+  }
+}

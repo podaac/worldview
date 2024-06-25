@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Aqua_AOD_Deep_Blue_Land": {
+      "id": "MODIS_Aqua_AOD_Deep_Blue_Land",
+      "description": "modis/aqua/MODIS_Aqua_AOD_Deep_Blue_Land",
+      "tags": "aod",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true
+    }
+  }
+}

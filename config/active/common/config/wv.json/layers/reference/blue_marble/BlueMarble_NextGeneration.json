@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "BlueMarble_NextGeneration": {
+      "id": "BlueMarble_NextGeneration",
+      "description": "reference/blue_marble/BlueMarble_NextGeneration",
+      "tags": "bm bmng",
+      "group": "baselayers",
+      "layergroup": "Blue Marble",
+      "wrapX": true
+    }
+  }
+}

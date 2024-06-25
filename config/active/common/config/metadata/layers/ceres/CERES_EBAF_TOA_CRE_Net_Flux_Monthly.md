@@ -1,0 +1,9 @@
+The TOA CRE Net Flux (Monthly, Energy Balanced and Filled) layer represents the broadband incoming solar (downwelling incident sunlight) minus the reflected shortwave (SW) and emitted longwave (LW) flux at TOA (both upwelling, defined as positive), for the Cloud Radiative Effects (CRE) or cloud forcing (which is the difference above the cloud layer, between the all-sky and clear sky conditions). It can be thought of the balance between incoming and outgoing energy, indicating the total energy that is available to influence the climate. A positive global Net Flux over time indicates the Earth is warming, whereas negative values indicate cooling. CERES footprints (20 km nominal resolution) are classified as clear if they contain 99% of pixels identified as clear by the CERES-MODIS clear-sky mask.
+
+The CERES Energy Balanced and Filled (EBAF) layers are derived from CERES SYN1Deg products, and provide monthly mean radiative fluxes corresponding to collection either at the Earth’s surface (EBAF-Surface) or top-of-the-atmosphere (EBAF-TOA). EBAF-products were designed for climate model evaluation, estimating the Earth's global mean energy budget, and to infer meridional heat transport. For some climate modelers, the products address the need for a net imbalance constrained to the ocean heat storage term.
+
+The CERES TOA CRE Net Flux (Monthly, Energy Balanced and Filled) layer is available from the CERES instruments on the Terra satellite. The sensor resolution is 1 degree, imagery resolution is 2 km, and the temporal resolution is monthly.
+
+Data parameter: `toa_cre_net_mon`
+
+References: CERES_EBAF-Sfc_Edition4.0 [doi:10.5067/TERRA+AQUA/CERES/EBAF-SURFACE_L3B004.0](https://doi.org/10.5067/TERRA+AQUA/CERES/EBAF-SURFACE_L3B004.0)

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Particulate_Matter_Below_2.5micrometers_2010-2012": {
+      "id": "Particulate_Matter_Below_2.5micrometers_2010-2012",
+      "description": "sedac/Particulate_Matter_Below_25micrometers_2010-2012",
+      "tags": "human sedac pm2.5",
+      "group": "overlays",
+      "layergroup": "Particulate Matter",
+      "wrapX": true
+    }
+  }
+}

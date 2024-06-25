@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MLS_H2O_46hPa_Night": {
+      "id": "MLS_H2O_46hPa_Night",
+      "description": "mls/MLS_H2O_46hPa_Night",
+      "tags": "h2o",
+      "group": "overlays",
+      "layergroup": "Water Vapor"
+    }
+  }
+}

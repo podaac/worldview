@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L2_Cloud_Top_Height_Day": {
+      "id": "AIRS_L2_Cloud_Top_Height_Day",
+      "description": "airs/AIRS_L2_Cloud_Top_Height_Day",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Cloud Top Height"
+    }
+  }
+}

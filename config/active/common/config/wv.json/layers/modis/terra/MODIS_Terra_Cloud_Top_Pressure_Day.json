@@ -1,0 +1,21 @@
+{
+  "layers": {
+    "MODIS_Terra_Cloud_Top_Pressure_Day": {
+      "id": "MODIS_Terra_Cloud_Top_Pressure_Day",
+      "description": "modis/terra/MODIS_Terra_Cloud_Top_Pressure_Day",
+      "group": "overlays",
+      "layergroup": "Cloud Pressure",
+      "wrapadjacentdays": true,
+      "projections": {
+        "geographic": {
+          "source": "GIBS:geographic"
+        }
+      },
+      "palette": {
+        "recommended": [
+          "blue_4"
+        ]
+      }
+    }
+  }
+}

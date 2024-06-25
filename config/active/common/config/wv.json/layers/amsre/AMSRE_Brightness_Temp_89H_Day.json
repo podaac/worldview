@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "AMSRE_Brightness_Temp_89H_Day": {
+      "id": "AMSRE_Brightness_Temp_89H_Day",
+      "description": "amsre/AMSRE_Brightness_Temp_89H_Day",
+      "group": "overlays",
+      "layergroup": "Brightness Temperature"
+    }
+  }
+}

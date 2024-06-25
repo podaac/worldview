@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRU2_Sea_Ice_Brightness_Temp_6km_89H": {
+      "id": "AMSRU2_Sea_Ice_Brightness_Temp_6km_89H",
+      "description": "amsr2/AMSRU2_Sea_Ice_Brightness_Temp_6km_89H",
+      "tags": "amsru2 amsr-u2",
+      "group": "overlays",
+      "layergroup": "Sea Ice Brightness Temperature"
+    }
+  }
+}

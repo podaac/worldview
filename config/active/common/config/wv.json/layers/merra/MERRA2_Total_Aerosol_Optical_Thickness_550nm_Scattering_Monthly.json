@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Total_Aerosol_Optical_Thickness_550nm_Scattering_Monthly": {
+      "id": "MERRA2_Total_Aerosol_Optical_Thickness_550nm_Scattering_Monthly",
+      "description": "merra/MERRA2_Total_Aerosol_Optical_Thickness_550nm_Scattering_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth"
+    }
+  }
+}

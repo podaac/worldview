@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "SMAP_L1_Passive_Faraday_Rotation_Aft": {
+      "id": "SMAP_L1_Passive_Faraday_Rotation_Aft",
+      "description": "smap/SMAP_L1_Passive_Faraday_Rotation_Aft",
+      "group": "overlays",
+      "layergroup": "Faraday Rotation"
+    }
+  }
+}

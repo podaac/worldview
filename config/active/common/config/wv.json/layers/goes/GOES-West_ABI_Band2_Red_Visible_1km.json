@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "GOES-West_ABI_Band2_Red_Visible_1km": {
+      "id": "GOES-West_ABI_Band2_Red_Visible_1km",
+      "description": "goes/GOES-West_ABI_Band2_Red_Visible_1km",
+      "group": "overlays",
+      "tags": "geostationary geo",
+      "layergroup": "Geostationary",
+      "wrapX": true,
+      "availability": {
+        "rollingWindow": 90,
+        "historicalRanges": [
+          {
+            "startDate": "2021-09-30T21:00:00Z",
+            "endDate": "2021-09-30T21:00:00Z",
+            "dateInterval": "10"
+          },
+          {
+            "startDate": "2021-12-19T00:00:00Z",
+            "endDate": "2022-01-16T23:50:00Z",
+            "dateInterval": "10"
+          }
+        ]
+      }
+    }
+  }
+}

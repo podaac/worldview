@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "Daymet_Maximum_Air_Temp_Daily": {
+      "id": "Daymet_Maximum_Air_Temp_Daily",
+      "description": "daymet/Daymet_Maximum_Air_Temp_Daily",
+      "group": "overlays",
+      "layergroup": "Temperature",
+      "wrapadjacentdays": true
+    }
+  }
+}

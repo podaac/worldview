@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L3_Surface_Relative_Humidity_Monthly_Day": {
+      "id": "AIRS_L3_Surface_Relative_Humidity_Monthly_Day",
+      "description": "airs/AIRS_L3_Surface_Relative_Humidity_Monthly_Day",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Relative Humidity"
+    }
+  }
+}

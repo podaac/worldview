@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Aqua_CorrectedReflectance_TrueColor": {
+      "id": "MODIS_Aqua_CorrectedReflectance_TrueColor",
+      "description": "modis/aqua/MODIS_Aqua_CorrectedReflectance_TrueColor",
+      "tags": "natural color cr",
+      "group": "baselayers",
+      "layergroup": "Corrected Reflectance",
+      "wrapadjacentdays": true
+    }
+  }
+}

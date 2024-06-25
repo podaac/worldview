@@ -1,0 +1,17 @@
+{
+  "layers": {
+    "OMI_SO2_Upper_Troposphere_and_Stratosphere": {
+      "id": "OMI_SO2_Upper_Troposphere_and_Stratosphere",
+      "description": "omi/OMI_SO2_Upper_Troposphere_and_Stratosphere",
+      "group": "overlays",
+      "layergroup": "Sulfur Dioxide",
+      "tags": "so2 sulphur dioxide",
+      "palette": {
+        "recommended": [
+          "orange_1",
+          "red_1"
+        ]
+      }
+    }
+  }
+}

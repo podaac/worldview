@@ -1,0 +1,122 @@
+{
+    "measurements": {
+        "Land Surface Temperature": {
+            "id": "land-surface-temperature",
+            "title":    "Land Surface Temperature",
+            "subtitle": "Aqua/MODIS, Aqua/MODIS/ASTER, NOAA-20/VIIRS, Suomi NPP/VIIRS, Terra/MODIS, Terra/MODIS/ASTER, SEDAC",
+            "sources": {
+                "Suomi NPP/VIIRS": {
+                    "id": "suominpp-viirs",
+                    "title": "Suomi NPP/VIIRS",
+                    "description": "",
+                    "image": "",
+                    "settings": [
+                        "VIIRS_SNPP_Land_Surface_Temp_Day",
+                        "VIIRS_SNPP_Land_Surface_Temp_Night",
+                        "OrbitTracks_Suomi_NPP_Ascending",
+                        "OrbitTracks_Suomi_NPP_Descending"
+                    ]
+                },
+                "NOAA-20/VIIRS": {
+                    "id": "noaa20-viirs",
+                    "title": "NOAA-20/VIIRS",
+                    "description": "",
+                    "image": "",
+                    "settings": [
+                        "VIIRS_NOAA20_Land_Surface_Temp_Day",
+                        "VIIRS_NOAA20_Land_Surface_Temp_Night",
+                        "OrbitTracks_NOAA-20_Ascending",
+                        "OrbitTracks_NOAA-20_Descending"
+                    ]
+                },
+
+                "Aqua/MODIS": {
+                    "id": "aqua-modis",
+                    "title": "Aqua/MODIS",
+                    "description": "modis/LandSurfaceTemperature",
+                    "image": "",
+                    "settings": [
+                        "MODIS_Aqua_Land_Surface_Temp_Day",
+                        "MODIS_Aqua_Land_Surface_Temp_Night",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Daily_Day",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Daily_Night",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_8Day_Day",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_8Day_Night",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Monthly_Day",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Monthly_Night",
+                        "OrbitTracks_Aqua_Ascending",
+                        "OrbitTracks_Aqua_Descending"
+                    ]
+                },
+                "Aqua/MODIS/ASTER": {
+                    "id": "aqua-modis-aster",
+                    "title": "Aqua/MODIS/ASTER",
+                    "description": "modis/LandSurfaceTemperature",
+                    "image": "",
+                    "settings": [
+                        "MODIS_Aqua_Land_Surface_Temp_Day_TES",
+                        "MODIS_Aqua_Land_Surface_Temp_Night_TES",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Daily_Day_TES",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Daily_Night_TES",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_8Day_Day_TES",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_8Day_Night_TES",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Monthly_CMG_Day_TES",
+                        "MODIS_Aqua_L3_Land_Surface_Temp_Monthly_CMG_Night_TES",
+                        "OrbitTracks_Aqua_Ascending",
+                        "OrbitTracks_Aqua_Descending"
+                    ]
+                },
+                "Terra/MODIS": {
+                    "id": "terra-modis",
+                    "title": "Terra/MODIS",
+                    "description": "modis/LandSurfaceTemperature",
+                    "image": "",
+                    "settings": [
+                        "MODIS_Terra_Land_Surface_Temp_Day",
+                        "MODIS_Terra_Land_Surface_Temp_Night",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Daily_Day",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Daily_Night",
+                        "MODIS_Terra_L3_Land_Surface_Temp_8Day_Day",
+                        "MODIS_Terra_L3_Land_Surface_Temp_8Day_Night",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Monthly_Day",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Monthly_Night",
+                        "OrbitTracks_Terra_Descending",
+                        "OrbitTracks_Terra_Ascending"
+                    ]
+                },
+                "Terra/MODIS/ASTER": {
+                    "id": "terra-modis-aster",
+                    "title": "Terra/MODIS/ASTER",
+                    "description": "modis/LandSurfaceTemperature",
+                    "image": "",
+                    "settings": [
+                        "MODIS_Terra_Land_Surface_Temp_Day_TES",
+                        "MODIS_Terra_Land_Surface_Temp_Night_TES",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Daily_Day_TES",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Daily_Night_TES",
+                        "MODIS_Terra_L3_Land_Surface_Temp_8Day_Day_TES",
+                        "MODIS_Terra_L3_Land_Surface_Temp_8Day_Night_TES",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Monthly_CMG_Day_TES",
+                        "MODIS_Terra_L3_Land_Surface_Temp_Monthly_CMG_Night_TES",
+                        "OrbitTracks_Terra_Descending",
+                        "OrbitTracks_Terra_Ascending"
+                    ]
+                },
+                "SEDAC": {
+                    "id": "sedac",
+                    "title": "SEDAC",
+                    "description": "",
+                    "image": "",
+                    "settings": [
+                        "Summer_Day_Max_Land_Surface_Temp_2013",
+                        "Summer_Night_Min_Land_Surface_Temp_2013",
+                        "UHI_Avg_Summer_Day_Max_Land_Surface_Temp_2013",
+                        "UHI_Avg_Summer_Night_Min_Land_Surface_Temp_2013",
+                        "UHI_Urban-Rural_Summer_Day_Max_Land_Surface_Temp_Difference_2013",
+                        "UHI_Urban-Rural_Summer_Night_Min_Land_Surface_Temp_Difference_2013"
+                    ]
+                }
+            }
+        }
+    }
+}

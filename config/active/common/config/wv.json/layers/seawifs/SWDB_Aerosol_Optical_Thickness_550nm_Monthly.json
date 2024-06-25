@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SWDB_Aerosol_Optical_Thickness_550nm_Monthly": {
+      "id": "SWDB_Aerosol_Optical_Thickness_550nm_Monthly",
+      "description": "seawifs/SWDB_Aerosol_Optical_Thickness_550nm_Monthly",
+      "tags": "swdb",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth"
+    }
+  }
+}

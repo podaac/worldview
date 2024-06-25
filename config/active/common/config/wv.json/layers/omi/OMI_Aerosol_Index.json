@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "OMI_Aerosol_Index": {
+      "id": "OMI_Aerosol_Index",
+      "description": "omi/OMI_Aerosol_Index",
+      "group": "overlays",
+      "layergroup": "Aerosol Index",
+      "tags": "ai",
+      "palette": {
+        "recommended": [
+          "orange_1"
+        ]
+      }
+    }
+  }
+}

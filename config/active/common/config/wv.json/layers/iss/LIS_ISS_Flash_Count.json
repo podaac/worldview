@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "LIS_ISS_Flash_Count": {
+      "id": "LIS_ISS_Flash_Count",
+      "description": "iss/LIS_ISS_Flash_Count",
+      "tags": "lightning international space station iss",
+      "group": "overlays",
+      "layergroup": "Lightning",
+      "wrapadjacentdays": true
+    }
+  }
+}

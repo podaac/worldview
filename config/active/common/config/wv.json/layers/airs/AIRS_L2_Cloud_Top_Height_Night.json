@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L2_Cloud_Top_Height_Night": {
+      "id": "AIRS_L2_Cloud_Top_Height_Night",
+      "description": "airs/AIRS_L2_Cloud_Top_Height_Night",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Cloud Top Height"
+    }
+  }
+}

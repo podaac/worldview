@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Night": {
+      "id": "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Night",
+      "description": "mopitt/MOPITT_CO_Monthly_Surface_Mixing_Ratio_Night",
+      "tags": "co",
+      "group": "overlays",
+      "layergroup": "Carbon Monoxide"
+    }
+  }
+}

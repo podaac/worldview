@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Combined_L3_Nadir-BRDF_Daily": {
+      "id": "MODIS_Combined_L3_Nadir-BRDF_Daily",
+      "description": "modis/combined/MODIS_Combined_L3_Nadir-BRDF_Daily",
+      "tags": "",
+      "group": "baselayers",
+      "layergroup": "Land Surface Reflectance",
+      "wrapadjacentdays": true
+    }
+  }
+}

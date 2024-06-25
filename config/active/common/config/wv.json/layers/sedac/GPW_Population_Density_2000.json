@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "GPW_Population_Density_2000": {
+      "id": "GPW_Population_Density_2000",
+      "description": "sedac/GPW_Population_Density_2000",
+      "tags": "human sedac population",
+      "group": "overlays",
+      "layergroup": "Population Density",
+      "wrapX": true
+    }
+  }
+}

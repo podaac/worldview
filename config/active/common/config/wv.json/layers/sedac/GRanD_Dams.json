@@ -1,0 +1,34 @@
+{
+  "layers": {
+    "GRanD_Dams": {
+      "id": "GRanD_Dams",
+      "description": "sedac/GRanD_Dams",
+      "group": "overlays",
+      "tags": "vectors",
+      "type": "vector",
+      "layergroup": "Socioeconomic",
+      "vectorStyle": {
+        "id": "GRanD_Dams"
+      },
+      "wrapX": true,
+      "palette": {
+        "id": "GRanD_Dams",
+        "immutable": true,
+        "styleProperty": "MAIN_USE",
+        "unclassified": "Not Classified"
+      },
+      "breakPointLayer": {
+        "id": "GRanD_Dams",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.03515625
+          }
+        }
+      }
+    }
+  }
+}

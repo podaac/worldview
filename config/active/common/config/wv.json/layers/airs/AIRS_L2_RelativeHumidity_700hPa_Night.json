@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L2_RelativeHumidity_700hPa_Night": {
+      "id": "AIRS_L2_RelativeHumidity_700hPa_Night",
+      "description": "airs/AIRS_L2_RelativeHumidity_700hPa_Night",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Relative Humidity"
+    }
+  }
+}

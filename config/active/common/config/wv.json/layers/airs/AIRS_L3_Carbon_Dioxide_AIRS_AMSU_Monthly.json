@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L3_Carbon_Dioxide_AIRS_AMSU_Monthly": {
+      "id": "AIRS_L3_Carbon_Dioxide_AIRS_AMSU_Monthly",
+      "description": "airs/AIRS_L3_Carbon_Dioxide_AIRS_AMSU_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Carbon Dioxide"
+    }
+  }
+}

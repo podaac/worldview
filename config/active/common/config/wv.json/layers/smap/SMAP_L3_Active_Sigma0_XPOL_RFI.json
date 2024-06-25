@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L3_Active_Sigma0_XPOL_RFI": {
+      "id": "SMAP_L3_Active_Sigma0_XPOL_RFI",
+      "description": "smap/SMAP_L3_Active_Sigma0_XPOL_RFI",
+      "group": "overlays",
+      "layergroup": "Sigma0",
+      "wrapadjacentdays": true
+    }
+  }
+}

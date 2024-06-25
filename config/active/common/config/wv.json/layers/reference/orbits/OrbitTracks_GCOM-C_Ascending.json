@@ -1,0 +1,51 @@
+{
+  "layers": {
+    "OrbitTracks_GCOM-C_Ascending": {
+      "id": "OrbitTracks_GCOM-C_Ascending",
+      "description": "reference/orbits/OrbitTracks_GCOM-C_Ascending",
+      "group": "overlays",
+      "type": "vector",
+      "period": "daily",
+      "layergroup": "Orbital Track",
+      "track": "ascending",
+      "palette": {
+        "id": "OrbitTracks_GCOM-C_Ascending",
+        "immutable": true
+      },
+      "tags": "tracks night vector",
+      "clickDisabledFeatures": [
+        "LineString"
+      ],
+      "vectorStyle": {
+        "id": "OrbitTracks_GCOM-C_Ascending",
+        "antarctic": {
+          "id": "OrbitTracks_GCOM-C_Ascending_polar"
+        },
+        "arctic": {
+          "id": "OrbitTracks_GCOM-C_Ascending_polar"
+        }
+      },
+      "modalShouldFollowClicks": true,
+      "breakPointLayer": {
+        "id": "OrbitTracks_GCOM-C_Ascending",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.017578125
+          },
+          "antarctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:antarctic"
+          },
+          "arctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:arctic"
+          }
+        }
+      }
+    }
+  }
+}

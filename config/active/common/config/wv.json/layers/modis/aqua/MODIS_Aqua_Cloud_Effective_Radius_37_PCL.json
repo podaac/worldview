@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Aqua_Cloud_Effective_Radius_37_PCL": {
+      "id": "MODIS_Aqua_Cloud_Effective_Radius_37_PCL",
+      "description": "modis/aqua/MODIS_Aqua_Cloud_Effective_Radius_37_PCL",
+      "group": "overlays",
+      "layergroup": "Cloud Effective Radius",
+      "wrapadjacentdays": true
+    }
+  }
+}

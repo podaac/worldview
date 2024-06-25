@@ -1,0 +1,18 @@
+{
+  "layers": {
+    "MEaSUREs_Daily_Landscape_Freeze_Thaw_AMSRE": {
+      "id": "MEaSUREs_Daily_Landscape_Freeze_Thaw_AMSRE",
+      "description": "amsre/MEaSUREs_Daily_Landscape_Freeze_Thaw_AMSRE",
+      "group": "overlays",
+      "layergroup": "Freeze/Thaw",
+      "projections": {
+        "geographic": {
+          "source": "GIBS:geographic"
+        }
+      },
+      "palette": {
+        "immutable": false
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Surface_Albedo_Monthly": {
+      "id": "MERRA2_Surface_Albedo_Monthly",
+      "description": "merra/MERRA2_Surface_Albedo_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Surface Albedo"
+    }
+  }
+}

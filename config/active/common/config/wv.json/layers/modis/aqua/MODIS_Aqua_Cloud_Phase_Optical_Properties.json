@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Aqua_Cloud_Phase_Optical_Properties": {
+      "id": "MODIS_Aqua_Cloud_Phase_Optical_Properties",
+      "description": "modis/aqua/MODIS_Aqua_Cloud_Phase_Optical_Properties",
+      "group": "overlays",
+      "layergroup": "Cloud Phase",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Terra_Cloud_Multi_Layer_Flag": {
+      "id": "MODIS_Terra_Cloud_Multi_Layer_Flag",
+      "description": "modis/terra/MODIS_Terra_Cloud_Multi_Layer_Flag",
+      "group": "overlays",
+      "layergroup": "Cloud Multi Layer Flag",
+      "wrapadjacentdays": true
+    }
+  }
+}

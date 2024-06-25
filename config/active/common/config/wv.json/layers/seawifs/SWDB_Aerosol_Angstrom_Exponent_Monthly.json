@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SWDB_Aerosol_Angstrom_Exponent_Monthly": {
+      "id": "SWDB_Aerosol_Angstrom_Exponent_Monthly",
+      "description": "seawifs/SWDB_Aerosol_Angstrom_Exponent_Monthly",
+      "tags": "swdb",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth"
+    }
+  }
+}

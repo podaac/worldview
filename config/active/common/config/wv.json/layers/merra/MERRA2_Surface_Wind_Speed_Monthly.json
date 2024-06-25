@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Surface_Wind_Speed_Monthly": {
+      "id": "MERRA2_Surface_Wind_Speed_Monthly",
+      "description": "merra/MERRA2_Surface_Wind_Speed_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Wind Speed"
+    }
+  }
+}

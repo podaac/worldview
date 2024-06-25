@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "Aquarius_Soil_Moisture_Weekly": {
+      "id": "Aquarius_Soil_Moisture_Weekly",
+      "description": "aquarius/Aquarius_Soil_Moisture_Weekly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Soil Moisture"
+    }
+  }
+}

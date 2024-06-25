@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Evaporation_Land_Monthly": {
+      "id": "MERRA2_Evaporation_Land_Monthly",
+      "description": "merra/MERRA2_Evaporation_Land_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Evaporation"
+    }
+  }
+}

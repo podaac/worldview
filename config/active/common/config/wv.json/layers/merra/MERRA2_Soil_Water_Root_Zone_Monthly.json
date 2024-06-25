@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Soil_Water_Root_Zone_Monthly": {
+      "id": "MERRA2_Soil_Water_Root_Zone_Monthly",
+      "description": "merra/MERRA2_Soil_Water_Root_Zone_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Soil Moisture"
+    }
+  }
+}

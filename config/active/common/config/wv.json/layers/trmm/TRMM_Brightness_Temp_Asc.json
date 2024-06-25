@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "TRMM_Brightness_Temp_Asc": {
+      "id": "TRMM_Brightness_Temp_Asc",
+      "description": "trmm/TRMM_Brightness_Temp_Asc",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Brightness Temperature"
+    }
+  }
+}

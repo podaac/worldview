@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Snowfall_Monthly": {
+      "id": "MERRA2_Snowfall_Monthly",
+      "description": "merra/MERRA2_Snowfall_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Precipitation Rate"
+    }
+  }
+}

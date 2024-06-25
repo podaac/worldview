@@ -1,0 +1,5 @@
+The MODIS Cloud Phase Infrared layer indicates the phase of cloud particles inferred from the infrared wavelengths (8.5 and 11 micron). The 3 cloud particle phase categories retrieved from MODIS are ice, liquid and uncertain. Cloud phase plays a key role in regulating the Earth’s energy budget because the sunlight incident on ice and liquid clouds are reflected, absorbed and transmitted very differently. Changes in cloud phase affects the climate feedback mechanisms. Clouds, therefore, play a very important role in the Earth’s energy budget and climate system.
+
+The MODIS Cloud Phase Infrared layer is available from both the Terra (MOD06) and Aqua (MYD06) satellites for day and nighttime overpasses. The sensor/algorithm resolution is 1 km and 5 km, imagery resolution is 2 km, and the temporal resolution is daily.
+
+References: MYD06_L2 NRT [doi:10.5067/MODIS/MYD06_L2.NRT.061](https://doi.org/10.5067/MODIS/MYD06_L2.NRT.061); MYD06_L2 [doi:10.5067/MODIS/MYD06_L2.061](https://doi.org/10.5067/MODIS/MYD06_L2.061); [MODIS Atmosphere - Cloud (06_L2)](https://modis-atmos.gsfc.nasa.gov/products/cloud)

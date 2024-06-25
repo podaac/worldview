@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_SO2_Column_Mass_Density_Monthly": {
+      "id": "MERRA2_SO2_Column_Mass_Density_Monthly",
+      "description": "merra/MERRA2_SO2_Column_Mass_Density_Monthly",
+      "tags": "sulfur dioxide sulphur dioxide so2",
+      "group": "overlays",
+      "layergroup": "Sulfur Dioxide"
+    }
+  }
+}

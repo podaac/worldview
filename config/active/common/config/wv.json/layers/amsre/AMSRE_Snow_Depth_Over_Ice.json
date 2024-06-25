@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "AMSRE_Snow_Depth_Over_Ice": {
+      "id": "AMSRE_Snow_Depth_Over_Ice",
+      "description": "amsre/AMSRE_Snow_Depth_Over_Ice",
+      "group": "overlays",
+      "layergroup": "Snow Depth",
+      "palette": {
+        "recommended": [
+          "blue_4",
+          "purple_2"
+        ]
+      }
+    }
+  }
+}

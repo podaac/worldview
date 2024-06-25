@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SSMIS_Sea_Ice_Concentration_Snow_Extent": {
+      "id": "SSMIS_Sea_Ice_Concentration_Snow_Extent",
+      "description": "ssmi/SSMIS_Sea_Ice_Concentration_Snow_Extent",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Sea Ice"
+    }
+  }
+}

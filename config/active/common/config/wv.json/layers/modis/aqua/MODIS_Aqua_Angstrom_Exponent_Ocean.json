@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Aqua_Angstrom_Exponent_Ocean": {
+      "id": "MODIS_Aqua_Angstrom_Exponent_Ocean",
+      "description": "modis/aqua/MODIS_Aqua_Angstrom_Exponent_Ocean",
+      "tags": "aod",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "RSS_Merged_Wind_Climatology_Monthly": {
+      "id": "RSS_Merged_Wind_Climatology_Monthly",
+      "description": "multi-mission/merged/RSS_Merged_Wind_Climatology_Monthly",
+      "tags": "",
+      "layergroup": "Wind Speed",
+      "group": "overlays"
+    }
+  }
+}

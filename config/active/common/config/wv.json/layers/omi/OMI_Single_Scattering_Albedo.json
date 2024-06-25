@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "OMI_Single_Scattering_Albedo": {
+      "id": "OMI_Single_Scattering_Albedo",
+      "description": "omi/OMI_Single_Scattering_Albedo",
+      "group": "overlays",
+      "layergroup": "Aerosol Albedo",
+      "tags": "ultra violet"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Uncertainty_Analyzed_Surface_Soil_Moisture": {
+      "id": "SMAP_L4_Uncertainty_Analyzed_Surface_Soil_Moisture",
+      "description": "smap/SMAP_L4_Uncertainty_Analyzed_Surface_Soil_Moisture",
+      "group": "overlays",
+      "layergroup": "Soil Moisture",
+      "wrapadjacentdays": true
+    }
+  }
+}

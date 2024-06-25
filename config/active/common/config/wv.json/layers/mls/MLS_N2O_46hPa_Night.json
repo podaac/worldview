@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MLS_N2O_46hPa_Night": {
+      "id": "MLS_N2O_46hPa_Night",
+      "description": "mls/MLS_N2O_46hPa_Night",
+      "tags": "n2o",
+      "group": "overlays",
+      "layergroup": "Nitrous Oxide"
+    }
+  }
+}

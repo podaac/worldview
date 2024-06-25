@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MEaSUREs_Ice_Velocity_Antarctica": {
+      "id": "MEaSUREs_Ice_Velocity_Antarctica",
+      "description": "multi-mission/merged/MEaSUREs_Ice_Velocity_Antarctica",
+      "tags": "",
+      "layergroup": "Ice Velocity Antarctica",
+      "group": "overlays"
+    }
+  }
+}

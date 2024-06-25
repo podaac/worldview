@@ -1,0 +1,4 @@
+### About AIRS
+AIRS, the Atmospheric Infrared Sounder is a facility instrument aboard the second Earth Observing System polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil (HSB, non-operational since February 2003), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors. AIRS data are generated continuously. Global coverage is obtained twice daily (day and night) on a 1:30pm sun synchronous orbit from a 705 km altitude.
+
+The Atmospheric Infrared Sounder (AIRS) is an instrument on board the Aqua satellite. The AIRS Precipitation Estimate (AIRG2SSD) layer is a is a variable of the AIRS Level 2 Near Real Time Support Retrieval (AIRS) (AIR2SUP_NRT). The imagery resolution is 2 km and sensor resolution is 45 km. The temporal resolution is daily.

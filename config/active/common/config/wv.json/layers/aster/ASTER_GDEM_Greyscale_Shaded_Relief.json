@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "ASTER_GDEM_Greyscale_Shaded_Relief": {
+      "id": "ASTER_GDEM_Greyscale_Shaded_Relief",
+      "description": "aster/ASTER_GDEM_Greyscale_Shaded_Relief",
+      "tags": "gdem dem terrain",
+      "group": "baselayers",
+      "layergroup": "Terrain Elevation",
+      "wrapX": true
+    }
+  }
+}

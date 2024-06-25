@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRU2_Total_Precipitable_Water_Day": {
+      "id": "AMSRU2_Total_Precipitable_Water_Day",
+      "description": "amsr2/AMSRU2_Total_Precipitable_Water_Day",
+      "tags": "amsru2 amsr-u2",
+      "group": "overlays",
+      "layergroup": "Precipitation Rate"
+    }
+  }
+}

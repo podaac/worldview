@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "CCMP_REMSS_Scalar_Wind_Speed_Monthly": {
+      "id": "CCMP_REMSS_Scalar_Wind_Speed_Monthly",
+      "description": "multi-mission/merged/CCMP_REMSS_Scalar_Wind_Speed_Monthly",
+      "tags": "podaac PO.DAAC",
+      "layergroup": "Wind Speed",
+      "group": "overlays"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "MODIS_Terra_Brightness_Temp_Band31_Day": {
+      "id": "MODIS_Terra_Brightness_Temp_Band31_Day",
+      "description": "modis/terra/MODIS_Terra_Brightness_Temp_Band31_Day",
+      "group": "overlays",
+      "layergroup": "Brightness Temperature",
+      "wrapadjacentdays": true,
+      "projections": {
+        "geographic": {
+          "source": "GIBS:geographic"
+        }
+      }
+    }
+  }
+}

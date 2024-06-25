@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L2_Dust_Score_Night": {
+      "id": "AIRS_L2_Dust_Score_Night",
+      "description": "airs/AIRS_L2_Dust_Score_Night",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Dust"
+    }
+  }
+}

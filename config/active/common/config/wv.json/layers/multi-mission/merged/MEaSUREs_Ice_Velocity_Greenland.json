@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MEaSUREs_Ice_Velocity_Greenland": {
+      "id": "MEaSUREs_Ice_Velocity_Greenland",
+      "description": "multi-mission/merged/MEaSUREs_Ice_Velocity_Greenland",
+      "tags": "",
+      "layergroup": "Ice Velocity Greenland",
+      "group": "overlays"
+    }
+  }
+}

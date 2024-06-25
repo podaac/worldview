@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth": {
+      "id": "MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth",
+      "description": "modis/combined/MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true
+    }
+  }
+}

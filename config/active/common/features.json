@@ -1,0 +1,62 @@
+{
+    "features": {
+        "animation": true,
+        "urlShortening": false,
+        "customPalettes": true,
+        "compare": true,
+        "charting": false,
+        "tour": true,
+        "feedback": true,
+        "previewSnapshots": true,
+        "googleTagManager": true,
+        "vismetadata": {
+            "url": "https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/",
+            "daacMap": {
+                "ASIPS": "Atmosphere SIPS",
+                "GES_DISC":	"GES DISC",
+                "GHRC_DAAC": "GHRC DAAC",
+                "LAADS": "LAADS DAAC",
+                "LANCEAMSR2": "AMSR2 SIPS",
+                "LANCEMODIS": "MODAPS SIPS",
+                "LARC_ASDC": "ASDC",
+                "LARC":	"ASDC",
+                "LPDAAC_ECS": "LP DAAC",
+                "LPCLOUD":	"LP DAAC",
+                "MOPITT": "MOPITT SIPS",
+                "NSIDC_ECS": "NSIDC DAAC",
+                "OB_DAAC": "OB.DAAC",
+                "OMINRT": "OMI/Ozone SIPS",
+                "ORNL_DAAC": "ORNL DAAC",
+                "ORNL_CLOUD": "ORNL DAAC",
+                "PODAAC": "PO.DAAC",
+                "POCLOUD": "PO.DAAC",
+                "SEDAC": "SEDAC"
+            }
+        },
+        "cmr": {
+            "url": "https://cmr.earthdata.nasa.gov/search/"
+        },
+        "smartHandoffs": [
+            {
+                "toolName": "EARTHDATA_SEARCH",
+                "conceptId": "TL2243339890-ESDIS"
+            }
+        ],
+        "notification": {
+            "url": "https://status.earthdata.nasa.gov/api/v1/notifications",
+            "releases": "https://github.com/nasa-gibs/worldview/releases"
+        },
+        "imageDownload": {
+            "url": "https://wvs.earthdata.nasa.gov/api/v1/snapshot"
+        },
+        "naturalEvents": {
+            "host": "https://eonet.gsfc.nasa.gov/api/v3"
+        },
+        "locationSearch": {
+            "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/"
+        }
+    },
+    "scripts": [
+        "https://fbm.earthdata.nasa.gov/for/SOTO%20by%20Worldview/feedback.js"
+    ]
+}

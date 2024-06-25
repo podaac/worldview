@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MISR_Land_NDVI_Average_Monthly": {
+      "id": "MISR_Land_NDVI_Average_Monthly",
+      "description": "misr/MISR_Land_NDVI_Average_Monthly",
+      "tags": "normalized difference vegetation index",
+      "group": "overlays",
+      "layergroup": "Vegetation Indices"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "NLDAS_Near_Surface_Air_Temperature_Primary_Monthly": {
+      "id": "NLDAS_Near_Surface_Air_Temperature_Primary_Monthly",
+      "description": "ldas/NLDAS_Near_Surface_Air_Temperature_Primary_Monthly",
+      "tags": "north american land data assimilation system",
+      "group": "overlays",
+      "layergroup": "Temperature"
+    }
+  }
+}

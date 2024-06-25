@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Combined_L3_Black_Sky_Albedo_Daily": {
+      "id": "MODIS_Combined_L3_Black_Sky_Albedo_Daily",
+      "description": "modis/combined/MODIS_Combined_L3_Black_Sky_Albedo_Daily",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Albedo",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Terra_L4_LAI_8Day": {
+      "id": "MODIS_Terra_L4_LAI_8Day",
+      "description": "modis/terra/MODIS_Terra_L4_LAI_8Day",
+      "tags": "lai",
+      "group": "overlays",
+      "layergroup": "Leaf Area Index"
+    }
+  }
+}

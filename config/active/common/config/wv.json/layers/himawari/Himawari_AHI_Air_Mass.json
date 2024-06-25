@@ -1,0 +1,32 @@
+{
+  "layers": {
+    "Himawari_AHI_Air_Mass": {
+      "id": "Himawari_AHI_Air_Mass",
+      "description": "himawari/Himawari_AHI_Air_Mass",
+      "group": "overlays",
+      "tags": "geostationary geo",
+      "layergroup": "Geostationary",
+      "wrapX": true,
+      "availability": {
+        "rollingWindow": 90,
+        "historicalRanges": [
+          {
+            "startDate": "2020-01-03",
+            "endDate": "2020-01-04",
+            "dateInterval": "10"
+          },
+          {
+            "startDate": "2021-10-01T00:00:00Z",
+            "endDate": "2021-10-01T00:00:00Z",
+            "dateInterval": "10"
+          },
+          {
+            "startDate": "2021-12-19T00:00:00Z",
+            "endDate": "2022-01-16T23:50:00Z",
+            "dateInterval": "10"
+          }
+        ]
+      }
+    }
+  }
+}

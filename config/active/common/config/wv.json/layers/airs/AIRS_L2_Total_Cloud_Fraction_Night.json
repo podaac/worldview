@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L2_Total_Cloud_Fraction_Night": {
+      "id": "AIRS_L2_Total_Cloud_Fraction_Night",
+      "description": "airs/AIRS_L2_Total_Cloud_Fraction_Night",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Cloud Fraction"
+    }
+  }
+}

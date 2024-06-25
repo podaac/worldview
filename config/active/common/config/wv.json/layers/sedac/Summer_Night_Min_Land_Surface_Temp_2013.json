@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Summer_Night_Min_Land_Surface_Temp_2013": {
+      "id": "Summer_Night_Min_Land_Surface_Temp_2013",
+      "description": "sedac/Summer_Night_Min_Land_Surface_Temp_2013",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Land Surface Temperature",
+      "wrapX": true
+    }
+  }
+}

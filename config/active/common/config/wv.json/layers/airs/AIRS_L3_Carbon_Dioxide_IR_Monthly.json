@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L3_Carbon_Dioxide_IR_Monthly": {
+      "id": "AIRS_L3_Carbon_Dioxide_IR_Monthly",
+      "description": "airs/AIRS_L3_Carbon_Dioxide_IR_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Carbon Dioxide"
+    }
+  }
+}

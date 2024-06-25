@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Terra_L2G_SurfaceReflectance_Bands143_Daily": {
+      "id": "MODIS_Terra_L2G_SurfaceReflectance_Bands143_Daily",
+      "description": "modis/terra/MODIS_Terra_L2G_SurfaceReflectance_Bands143_Daily",
+      "tags": "lsr 143 true color",
+      "group": "baselayers",
+      "layergroup": "Land Surface Reflectance",
+      "wrapadjacentdays": true
+    }
+  }
+}

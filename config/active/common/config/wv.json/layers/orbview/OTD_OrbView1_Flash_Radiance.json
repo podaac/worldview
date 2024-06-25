@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "OTD_OrbView1_Flash_Radiance": {
+      "id": "OTD_OrbView1_Flash_Radiance",
+      "description": "orbview/OTD_OrbView1_Flash_Radiance",
+      "tags": "lightning",
+      "group": "overlays",
+      "layergroup": "Lightning",
+      "wrapadjacentdays": true
+    }
+  }
+}

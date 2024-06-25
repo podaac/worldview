@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Surface_Pressure_Monthly": {
+      "id": "MERRA2_Surface_Pressure_Monthly",
+      "description": "merra/MERRA2_Surface_Pressure_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Surface Pressure"
+    }
+  }
+}

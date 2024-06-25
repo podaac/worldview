@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Terra_L3_SST_MidIR_9km_Night_Annual": {
+      "id": "MODIS_Terra_L3_SST_MidIR_9km_Night_Annual",
+      "description": "modis/terra/MODIS_Terra_L3_SST_MidIR_9km_Night_Annual",
+      "group": "overlays",
+      "tags": "ssc podaac PO.DAAC",
+      "layergroup": "Sea Surface Temperature"
+    }
+  }
+}

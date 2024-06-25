@@ -1,0 +1,51 @@
+{
+  "layers": {
+    "OrbitTracks_ICESAT-2_Descending": {
+      "id": "OrbitTracks_ICESAT-2_Descending",
+      "description": "reference/orbits/OrbitTracks_ICESAT-2_Descending",
+      "tags": "tracks vector",
+      "group": "overlays",
+      "type": "vector",
+      "period": "daily",
+      "layergroup": "Orbital Track",
+      "track": "descending",
+      "palette": {
+        "id": "OrbitTracks_ICESAT-2_Descending",
+        "immutable": true
+      },
+      "clickDisabledFeatures": [
+        "LineString"
+      ],
+      "vectorStyle": {
+        "id": "OrbitTracks_ICESAT-2_Descending",
+        "antarctic": {
+          "id": "OrbitTracks_ICESAT-2_Descending_polar"
+        },
+        "arctic": {
+          "id": "OrbitTracks_ICESAT-2_Descending_polar"
+        }
+      },
+      "modalShouldFollowClicks": true,
+      "breakPointLayer": {
+        "id": "OrbitTracks_ICESAT-2_Descending",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.017578125
+          },
+          "antarctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:antarctic"
+          },
+          "arctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:arctic"
+          }
+        }
+      }
+    }
+  }
+}

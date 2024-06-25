@@ -1,0 +1,5 @@
+The MODIS Cloud Top Temperature (Day) layer indicates the atmospheric temperature at the top of the clouds measured in Kelvin (K). Clouds play an important role in the radiative balance of the Earth. Clouds can contain ice or water and each will react differently. Knowing the temperature of the cloud (weather a cold, icy cloud, or a warmer, wet cloud) and the changes in the cloud phase can affect climate feedback mechanism and is useful when included in global climate models. Cloud top temperature can be used to infer tropical convection and precipitation.
+
+The MODIS Cloud Top Temperature layer is a science parameter of the MODIS Cloud product and is available from both the Terra (MOD06) and Aqua (MYD06) satellites for day and nighttime overpasses. The sensor resolution is 5 km, imagery resolution is 2 km,  and the temporal resolution is daily.
+
+References: MOD06_L2 NRT [doi:10.5067/MODIS/MOD06_L2.NRT.061](https://doi.org/10.5067/MODIS/MOD06_L2.NRT.061); MOD06_L2 [doi:10.5067/MODIS/MOD06_L2.061](https://doi.org/10.5067/MODIS/MOD06_L2.061); [MODIS Atmosphere - Cloud (06_L2)](https://modis-atmos.gsfc.nasa.gov/products/cloud)

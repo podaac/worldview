@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "Aquarius_Wind_Speed_L3_7Day_Snapshot": {
+      "id": "Aquarius_Wind_Speed_L3_7Day_Snapshot",
+      "description": "aquarius/Aquarius_Wind_Speed_L3_7Day_Snapshot",
+      "tags": "podaac PO.DAAC",
+      "group": "overlays",
+      "layergroup": "Wind Speed"
+    }
+  }
+}

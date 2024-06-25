@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRE_Surface_Precipitation_Rate_Night": {
+      "id": "AMSRE_Surface_Precipitation_Rate_Night",
+      "description": "amsre/AMSRE_Surface_Precipitation_Rate_Night",
+      "tags": "rain snow",
+      "group": "overlays",
+      "layergroup": "Precipitation Rate"
+    }
+  }
+}

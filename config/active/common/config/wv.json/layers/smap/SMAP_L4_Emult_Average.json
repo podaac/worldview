@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Emult_Average": {
+      "id": "SMAP_L4_Emult_Average",
+      "description": "smap/SMAP_L4_Emult_Average",
+      "group": "overlays",
+      "layergroup": "Vegetation Light Use Efficiency",
+      "wrapadjacentdays": true
+    }
+  }
+}

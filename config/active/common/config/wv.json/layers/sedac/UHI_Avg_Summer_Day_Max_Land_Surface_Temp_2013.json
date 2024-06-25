@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "UHI_Avg_Summer_Day_Max_Land_Surface_Temp_2013": {
+      "id": "UHI_Avg_Summer_Day_Max_Land_Surface_Temp_2013",
+      "description": "sedac/UHI_Avg_Summer_Day_Max_Land_Surface_Temp_2013",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Land Surface Temperature",
+      "wrapX": true
+    }
+  }
+}

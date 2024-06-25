@@ -1,0 +1,17 @@
+{
+  "layers": {
+    "AIRS_Prata_SO2_Index_Night": {
+      "id": "AIRS_Prata_SO2_Index_Night",
+      "description": "airs/AIRS_Prata_SO2_Index_Night",
+      "tags": "so2 sulphur",
+      "group": "overlays",
+      "layergroup": "Sulfur Dioxide",
+      "palette": {
+        "recommended": [
+          "orange_1",
+          "red_1"
+        ]
+      }
+    }
+  }
+}

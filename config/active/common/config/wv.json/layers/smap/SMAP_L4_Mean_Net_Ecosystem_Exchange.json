@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Mean_Net_Ecosystem_Exchange": {
+      "id": "SMAP_L4_Mean_Net_Ecosystem_Exchange",
+      "description": "smap/SMAP_L4_Mean_Net_Ecosystem_Exchange",
+      "group": "overlays",
+      "layergroup": "Net Ecosystem CO2 Exchange",
+      "wrapadjacentdays": true
+    }
+  }
+}

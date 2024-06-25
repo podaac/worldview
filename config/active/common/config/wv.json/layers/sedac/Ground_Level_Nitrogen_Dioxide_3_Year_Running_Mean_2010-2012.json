@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Ground_Level_Nitrogen_Dioxide_3_Year_Running_Mean_2010-2012": {
+      "id": "Ground_Level_Nitrogen_Dioxide_3_Year_Running_Mean_2010-2012",
+      "description": "sedac/Ground_Level_Nitrogen_Dioxide_3_Year_Running_Mean_2010-2012",
+      "tags": "human sedac NO2",
+      "group": "overlays",
+      "layergroup": "Nitrogen Dioxide",
+      "wrapX": true
+    }
+  }
+}

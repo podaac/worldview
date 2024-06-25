@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MISR_Directional_Hemispherical_Reflectance_Average_Natural_Color_Monthly": {
+      "id": "MISR_Directional_Hemispherical_Reflectance_Average_Natural_Color_Monthly",
+      "description": "misr/MISR_Directional_Hemispherical_Reflectance_Average_Natural_Color_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "DHR Reflectance"
+    }
+  }
+}

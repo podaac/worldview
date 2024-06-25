@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "AMSRE_Brightness_Temp_89V_Night": {
+      "id": "AMSRE_Brightness_Temp_89V_Night",
+      "description": "amsre/AMSRE_Brightness_Temp_89V_Night",
+      "group": "overlays",
+      "layergroup": "Brightness Temperature"
+    }
+  }
+}

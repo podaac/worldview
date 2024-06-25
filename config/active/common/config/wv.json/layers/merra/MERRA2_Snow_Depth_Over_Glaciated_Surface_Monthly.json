@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Snow_Depth_Over_Glaciated_Surface_Monthly": {
+      "id": "MERRA2_Snow_Depth_Over_Glaciated_Surface_Monthly",
+      "description": "merra/MERRA2_Snow_Depth_Over_Glaciated_Surface_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Snow Depth"
+    }
+  }
+}

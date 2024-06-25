@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Analyzed_Root_Zone_Soil_Moisture": {
+      "id": "SMAP_L4_Analyzed_Root_Zone_Soil_Moisture",
+      "description": "smap/SMAP_L4_Analyzed_Root_Zone_Soil_Moisture",
+      "group": "overlays",
+      "layergroup": "Soil Moisture",
+      "wrapadjacentdays": true
+    }
+  }
+}

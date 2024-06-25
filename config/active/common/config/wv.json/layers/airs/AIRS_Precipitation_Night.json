@@ -1,0 +1,17 @@
+{
+  "layers": {
+    "AIRS_Precipitation_Night": {
+      "id": "AIRS_Precipitation_Night",
+      "description": "airs/AIRS_Precipitation_Night",
+      "tags": "rain snow",
+      "group": "overlays",
+      "layergroup": "Precipitation Estimate",
+      "palette": {
+        "recommended": [
+          "blue_1",
+          "blue_3"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "OMI_Aerosol_Optical_Depth": {
+      "id": "OMI_Aerosol_Optical_Depth",
+      "description": "omi/OMI_Aerosol_Optical_Depth",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "tags": "aod",
+      "palette": {
+        "recommended": [
+          "orange_1"
+        ]
+      }
+    }
+  }
+}

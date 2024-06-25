@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "SWDB_Aerosol_Optical_Thickness_550nm_Daily": {
+      "id": "SWDB_Aerosol_Optical_Thickness_550nm_Daily",
+      "description": "seawifs/SWDB_Aerosol_Optical_Thickness_550nm_Daily",
+      "tags": "swdb",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true
+    }
+  }
+}

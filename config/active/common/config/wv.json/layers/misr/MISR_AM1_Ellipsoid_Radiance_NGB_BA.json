@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MISR_AM1_Ellipsoid_Radiance_NGB_BA": {
+      "id": "MISR_AM1_Ellipsoid_Radiance_NGB_BA",
+      "description": "misr/MISR_AM1_Ellipsoid_Radiance_NGB_BA",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Radiance"
+    }
+  }
+}

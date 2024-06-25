@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Estimated_Net_Migration_1970-1980": {
+      "id": "Estimated_Net_Migration_1970-1980",
+      "description": "sedac/Estimated_Net_Migration_1970-1980",
+      "tags": "human sedac population",
+      "group": "overlays",
+      "layergroup": "Net Migration",
+      "wrapX": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "MLS_Temperature_46hPa_Night": {
+      "id": "MLS_Temperature_46hPa_Night",
+      "description": "mls/MLS_Temperature_46hPa_Night",
+      "group": "overlays",
+      "layergroup": "Temperature"
+    }
+  }
+}

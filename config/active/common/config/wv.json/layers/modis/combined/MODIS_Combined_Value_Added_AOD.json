@@ -1,0 +1,17 @@
+{
+  "layers": {
+    "MODIS_Combined_Value_Added_AOD": {
+      "id": "MODIS_Combined_Value_Added_AOD",
+      "description": "modis/combined/MODIS_Combined_Value_Added_AOD",
+      "tags": "aod",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true,
+      "palette": {
+        "recommended": [
+          "orange_1"
+        ]
+      }
+    }
+  }
+}

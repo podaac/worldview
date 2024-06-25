@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSUA_NOAA15_Brightness_Temp_Channel_12": {
+      "id": "AMSUA_NOAA15_Brightness_Temp_Channel_12",
+      "description": "amsua/AMSUA_NOAA15_Brightness_Temp_Channel_12",
+      "group": "overlays",
+      "layergroup": "Brightness Temperature",
+      "tags": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AIRS_L2_Surface_Relative_Humidity_Night": {
+      "id": "AIRS_L2_Surface_Relative_Humidity_Night",
+      "description": "airs/AIRS_L2_Surface_Relative_Humidity_Night",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Relative Humidity"
+    }
+  }
+}

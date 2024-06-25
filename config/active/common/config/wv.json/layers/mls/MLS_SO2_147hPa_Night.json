@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MLS_SO2_147hPa_Night": {
+      "id": "MLS_SO2_147hPa_Night",
+      "description": "mls/MLS_SO2_147hPa_Night",
+      "tags": "so2 sulphur",
+      "group": "overlays",
+      "layergroup": "Sulfur Dioxide"
+    }
+  }
+}

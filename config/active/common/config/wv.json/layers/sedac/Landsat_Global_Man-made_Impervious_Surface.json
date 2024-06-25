@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Landsat_Global_Man-made_Impervious_Surface": {
+      "id": "Landsat_Global_Man-made_Impervious_Surface",
+      "description": "sedac/Landsat_Global_Man-made_Impervious_Surface",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Socioeconomic",
+      "wrapX": true
+    }
+  }
+}

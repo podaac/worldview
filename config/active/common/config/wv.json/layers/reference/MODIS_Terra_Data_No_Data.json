@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Terra_Data_No_Data": {
+      "id": "MODIS_Terra_Data_No_Data",
+      "description": "reference/MODIS_Terra_Data_No_Data",
+      "group": "overlays",
+      "layergroup": "Areas of No Data (mask)",
+      "wrapadjacentdays": true
+    }
+  }
+}

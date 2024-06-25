@@ -1,0 +1,13 @@
+{
+  "layers": {
+    "ASTER_GDEM_Color_Index": {
+      "id": "ASTER_GDEM_Color_Index",
+      "description": "aster/ASTER_GDEM_Color_Index",
+      "tags": "gdem dem terrain",
+      "group": "overlays",
+      "type": "wmts",
+      "layergroup": "Terrain Elevation",
+      "wrapX": true
+    }
+  }
+}

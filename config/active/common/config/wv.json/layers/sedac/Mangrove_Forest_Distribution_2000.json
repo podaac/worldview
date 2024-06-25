@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Mangrove_Forest_Distribution_2000": {
+      "id": "Mangrove_Forest_Distribution_2000",
+      "description": "sedac/Mangrove_Forest_Distribution_2000",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Forests, Mangrove",
+      "wrapX": true
+    }
+  }
+}

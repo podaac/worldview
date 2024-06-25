@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRE_Soil_Moisture_SCA_Day": {
+      "id": "AMSRE_Soil_Moisture_SCA_Day",
+      "description": "amsre/AMSRE_Soil_Moisture_SCA_Day",
+      "group": "overlays",
+      "tags": "soil moisture sca",
+      "layergroup": "Soil Moisture"
+    }
+  }
+}

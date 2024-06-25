@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "AMSRE_Sea_Ice_Concentration_12km": {
+      "id": "AMSRE_Sea_Ice_Concentration_12km",
+      "description": "amsre/AMSRE_Sea_Ice_Concentration_12km",
+      "group": "overlays",
+      "layergroup": "Sea Ice",
+      "palette": {
+        "recommended": [
+          "blue_4",
+          "purple_2"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Combined_MAIAC_L2G_BidirectionalReflectance_Bands143": {
+      "id": "MODIS_Combined_MAIAC_L2G_BidirectionalReflectance_Bands143",
+      "description": "modis/combined/MODIS_Combined_MAIAC_L2G_BidirectionalReflectance_Bands143",
+      "tags": "",
+      "group": "baselayers",
+      "layergroup": "Land Surface Reflectance",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Total_Dust_Deposition_Dry_Wet_Monthly": {
+      "id": "MERRA2_Total_Dust_Deposition_Dry_Wet_Monthly",
+      "description": "merra/MERRA2_Total_Dust_Deposition_Dry_Wet_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Dust"
+    }
+  }
+}

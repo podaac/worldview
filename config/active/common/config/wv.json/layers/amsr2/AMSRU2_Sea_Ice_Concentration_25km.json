@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRU2_Sea_Ice_Concentration_25km": {
+      "id": "AMSRU2_Sea_Ice_Concentration_25km",
+      "description": "amsr2/AMSRU2_Sea_Ice_Concentration_25km",
+      "tags": "amsru2 amsr-u2",
+      "group": "overlays",
+      "layergroup": "Sea Ice"
+    }
+  }
+}

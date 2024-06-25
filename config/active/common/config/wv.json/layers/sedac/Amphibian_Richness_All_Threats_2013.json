@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Amphibian_Richness_All_Threats_2013": {
+      "id": "Amphibian_Richness_All_Threats_2013",
+      "description": "sedac/Amphibian_Richness_All_Threats_2013",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Amphibian Richness",
+      "wrapX": true
+    }
+  }
+}

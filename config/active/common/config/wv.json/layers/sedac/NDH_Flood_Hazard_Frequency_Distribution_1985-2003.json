@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "NDH_Flood_Hazard_Frequency_Distribution_1985-2003": {
+      "id": "NDH_Flood_Hazard_Frequency_Distribution_1985-2003",
+      "description": "sedac/NDH_Flood_Hazard_Frequency_Distribution_1985-2003",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Flood Hazard",
+      "wrapX": true
+    }
+  }
+}

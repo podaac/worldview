@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Combined_Flood_2-Day": {
+      "id": "MODIS_Combined_Flood_2-Day",
+      "description": "modis/combined/MODIS_Combined_Flood_2-Day",
+      "tags": "floods mcdwd",
+      "group": "overlays",
+      "layergroup": "Flood"
+    }
+  }
+}

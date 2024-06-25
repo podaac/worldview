@@ -1,0 +1,4 @@
+### About Nitrous Oxide (N2O)
+Nitrous oxide (N2O) is produced almost entirely at the Earth's surface, about 70% from biological processes (natural decay process of land and ocean) and the rest from human activities (e.g. agricultural fertilization and fossil-fuel burning) Since the 1950's an increase in N2O of about 0.3%/year has been seen in this important greenhouse gas.
+
+N2O studies contribute to the further investigation of stratospheric ozone layer stability. N2O is a good tracer of the movement of air parcels because its long life-time (over 100 years at 20 km) is much greater than that of atmospheric dynamical processes. MLS measurements of nitrous oxide are important in understanding the transport of air and therefore are used in tracking dynamical processes and differentiating these effects from chemical processes that affect ozone destruction.

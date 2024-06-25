@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "UHI_Urban-Rural_Summer_Night_Min_Land_Surface_Temp_Difference_2013": {
+      "id": "UHI_Urban-Rural_Summer_Night_Min_Land_Surface_Temp_Difference_2013",
+      "description": "sedac/UHI_Urban-Rural_Summer_Night_Min_Land_Surface_Temp_Difference_2013",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Land Surface Temperature",
+      "wrapX": true
+    }
+  }
+}

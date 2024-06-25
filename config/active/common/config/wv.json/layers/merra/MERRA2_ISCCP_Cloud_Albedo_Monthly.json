@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_ISCCP_Cloud_Albedo_Monthly": {
+      "id": "MERRA2_ISCCP_Cloud_Albedo_Monthly",
+      "description": "merra/MERRA2_ISCCP_Cloud_Albedo_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Cloud Albedo"
+    }
+  }
+}

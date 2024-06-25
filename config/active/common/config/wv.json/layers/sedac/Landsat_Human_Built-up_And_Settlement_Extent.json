@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Landsat_Human_Built-up_And_Settlement_Extent": {
+      "id": "Landsat_Human_Built-up_And_Settlement_Extent",
+      "description": "sedac/Landsat_Human_Built-up_And_Settlement_Extent",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Socioeconomic",
+      "wrapX": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "Aquarius_Sea_Surface_Salinity_L3_3Month": {
+      "id": "Aquarius_Sea_Surface_Salinity_L3_3Month",
+      "description": "aquarius/Aquarius_Sea_Surface_Salinity_L3_3Month",
+      "tags": "sss podaac PO.DAAC",
+      "group": "overlays",
+      "layergroup": "Sea Surface Salinity"
+    }
+  }
+}

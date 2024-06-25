@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "LIS_High_Resolution_Full_Climatology_LIS_Flash_Rate_Climatology": {
+      "id": "LIS_High_Resolution_Full_Climatology_LIS_Flash_Rate_Climatology",
+      "description": "trmm/LIS_High_Resolution_Full_Climatology_LIS_Flash_Rate_Climatology",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Lightning"
+    }
+  }
+}

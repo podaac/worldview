@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Terra_L3_SST_Thermal_9km_Day_Daily": {
+      "id": "MODIS_Terra_L3_SST_Thermal_9km_Day_Daily",
+      "description": "modis/terra/MODIS_Terra_L3_SST_Thermal_9km_Day_Daily",
+      "group": "overlays",
+      "tags": "ssc podaac PO.DAAC",
+      "layergroup": "Sea Surface Temperature",
+      "wrapadjacentdays": true
+    }
+  }
+}

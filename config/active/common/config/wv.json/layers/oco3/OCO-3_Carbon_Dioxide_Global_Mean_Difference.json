@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "OCO-3_Carbon_Dioxide_Global_Mean_Difference": {
+      "id": "OCO-3_Carbon_Dioxide_Global_Mean_Difference",
+      "description": "oco3/OCO-3_Carbon_Dioxide_Global_Mean_Difference",
+      "tags": "oco3 co2",
+      "group": "overlays",
+      "layergroup": "Carbon Dioxide",
+      "wrapadjacentdays": true
+    }
+  }
+}

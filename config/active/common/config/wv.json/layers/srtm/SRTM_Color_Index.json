@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "SRTM_Color_Index": {
+      "id": "SRTM_Color_Index",
+      "description": "srtm/SRTM_Color_Index",
+      "tags": "srtm gdem dem terrain",
+      "group": "overlays",
+      "layergroup": "Terrain Elevation",
+      "wrapX": true
+    }
+  }
+}

@@ -1,0 +1,1 @@
+The ASTER Global Digital Elevation Model (GDEM) Color Index layer shows land elevation around the world, measured in meters. On the default palette, white indicates the highest elevations, then brown, yellow and greens indicate low elevations.

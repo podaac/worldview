@@ -1,0 +1,17 @@
+{
+  "categories": {
+      "featured": {
+          "All": {
+              "title": "All",
+              "placement": "first",
+              "id": "featured-all",
+              "description": "",
+              "measurements": [
+                "Surface Water Extent - Featured",
+                "Corrected Reflectance",
+                "Sea Surface Temperature - Featured"
+              ]
+          }
+      }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Aqua_L2_Photosynthetically_Available_Radiation": {
+      "id": "MODIS_Aqua_L2_Photosynthetically_Available_Radiation",
+      "description": "modis/aqua/MODIS_Aqua_L2_Photosynthetically_Available_Radiation",
+      "tags": "par",
+      "group": "overlays",
+      "layergroup": "Photosynthetically Available Radiation",
+      "wrapadjacentdays": true
+    }
+  }
+}

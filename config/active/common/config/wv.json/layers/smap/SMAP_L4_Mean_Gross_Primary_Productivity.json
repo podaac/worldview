@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Mean_Gross_Primary_Productivity": {
+      "id": "SMAP_L4_Mean_Gross_Primary_Productivity",
+      "description": "smap/SMAP_L4_Mean_Gross_Primary_Productivity",
+      "group": "overlays",
+      "layergroup": "Gross Primary Productivity",
+      "wrapadjacentdays": true
+    }
+  }
+}

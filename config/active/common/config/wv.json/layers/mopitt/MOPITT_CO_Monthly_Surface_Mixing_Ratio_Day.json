@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day": {
+      "id": "MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day",
+      "description": "mopitt/MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day",
+      "tags": "co",
+      "group": "overlays",
+      "layergroup": "Carbon Monoxide"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+The MODIS Cloud Multi Layer Flag layer indicates the detection of multi layer clouds from MODIS shortwave observations expressed through 9 categories ranging from single layer cloud to the lowest confidence multi-layer cloud to the highest confidence multi-layer cloud with a range of intermediary confidence levels. This layer is useful for identifying areas of cloud overlap and flagging pixels where cloud microphysical retrievals would be adversely affected by cloud overlap.
+
+The MODIS Cloud Multi Layer Flag layer is available from both the Terra (MOD06) and Aqua (MYD06) satellites for daytime overpasses. The sensor resolution is 1 km, imagery resolution is 1 km, and the temporal resolution is daily.
+
+References: MOD06_L2 NRT [doi:10.5067/MODIS/MOD06_L2.NRT.061](https://doi.org/10.5067/MODIS/MOD06_L2.NRT.061); MOD06_L2 [doi:10.5067/MODIS/MOD06_L2.061](https://doi.org/10.5067/MODIS/MOD06_L2.061); [MODIS Atmosphere - Cloud (06_L2)](https://modis-atmos.gsfc.nasa.gov/products/cloud)

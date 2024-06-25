@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MERRA2_Evaporation_from_Turbulence_Monthly": {
+      "id": "MERRA2_Evaporation_from_Turbulence_Monthly",
+      "description": "merra/MERRA2_Evaporation_from_Turbulence_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Evaporation"
+    }
+  }
+}

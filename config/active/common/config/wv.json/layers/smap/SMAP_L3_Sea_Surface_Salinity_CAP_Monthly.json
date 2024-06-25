@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L3_Sea_Surface_Salinity_CAP_Monthly": {
+      "id": "SMAP_L3_Sea_Surface_Salinity_CAP_Monthly",
+      "description": "smap/SMAP_L3_Sea_Surface_Salinity_CAP_Monthly",
+      "tags": "sss podaac PO.DAAC",
+      "group": "overlays",
+      "layergroup": "Sea Surface Salinity"
+    }
+  }
+}

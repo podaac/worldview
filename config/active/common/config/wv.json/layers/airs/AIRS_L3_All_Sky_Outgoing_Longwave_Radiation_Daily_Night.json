@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Night": {
+      "id": "AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Night",
+      "description": "airs/AIRS_L3_All_Sky_Outgoing_Longwave_Radiation_Daily_Night",
+      "tags": "",
+      "group": "overlays",
+      "wrapadjacentdays": true,
+      "layergroup": "Outgoing Radiation"
+    }
+  }
+}

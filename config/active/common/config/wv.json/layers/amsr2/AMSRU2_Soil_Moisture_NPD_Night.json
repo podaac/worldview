@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRU2_Soil_Moisture_NPD_Night": {
+      "id": "AMSRU2_Soil_Moisture_NPD_Night",
+      "description": "amsr2/AMSRU2_Soil_Moisture_NPD_Night",
+      "tags": "amsru2 amsr-u2",
+      "group": "overlays",
+      "layergroup": "Soil Moisture"
+    }
+  }
+}

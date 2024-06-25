@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MEaSUREs_Sea_Ice_Snow_Extent": {
+      "id": "MEaSUREs_Sea_Ice_Snow_Extent",
+      "description": "multi-mission/merged/MEaSUREs_Sea_Ice_Snow_Extent",
+      "tags": "",
+      "layergroup": "Sea Ice",
+      "group": "overlays"
+    }
+  }
+}

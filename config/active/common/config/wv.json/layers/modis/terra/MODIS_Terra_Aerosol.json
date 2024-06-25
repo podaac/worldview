@@ -1,0 +1,17 @@
+{
+  "layers": {
+    "MODIS_Terra_Aerosol": {
+      "id": "MODIS_Terra_Aerosol",
+      "description": "modis/terra/MODIS_Terra_Aerosol",
+      "tags": "aod",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true,
+      "projections": {
+        "geographic": {
+          "source": "GIBS:geographic"
+        }
+      }
+    }
+  }
+}

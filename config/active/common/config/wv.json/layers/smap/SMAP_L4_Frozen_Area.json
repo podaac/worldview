@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L4_Frozen_Area": {
+      "id": "SMAP_L4_Frozen_Area",
+      "description": "smap/SMAP_L4_Frozen_Area",
+      "group": "overlays",
+      "layergroup": "Frozen Area",
+      "wrapadjacentdays": true
+    }
+  }
+}

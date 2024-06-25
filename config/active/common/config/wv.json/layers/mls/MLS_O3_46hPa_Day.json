@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MLS_O3_46hPa_Day": {
+      "id": "MLS_O3_46hPa_Day",
+      "description": "mls/MLS_O3_46hPa_Day",
+      "tags": "o3",
+      "group": "overlays",
+      "layergroup": "Ozone"
+    }
+  }
+}

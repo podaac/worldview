@@ -1,0 +1,17 @@
+{
+  "layers": {
+    "MODIS_Terra_Aerosol_Optical_Depth_3km": {
+      "id": "MODIS_Terra_Aerosol_Optical_Depth_3km",
+      "description": "modis/terra/MODIS_Terra_Aerosol_Optical_Depth_3km",
+      "tags": "aod",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true,
+      "projections": {
+        "geographic": {
+          "source": "GIBS:geographic"
+        }
+      }
+    }
+  }
+}

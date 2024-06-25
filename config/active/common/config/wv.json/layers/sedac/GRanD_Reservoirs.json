@@ -1,0 +1,32 @@
+{
+  "layers": {
+    "GRanD_Reservoirs": {
+      "id": "GRanD_Reservoirs",
+      "description": "sedac/GRanD_Reservoirs",
+      "group": "overlays",
+      "type": "vector",
+      "tags": "vectors",
+      "layergroup": "Socioeconomic",
+      "vectorStyle": {
+        "id": "GRanD_Reservoirs"
+      },
+      "palette": {
+        "id": "GRanD_Reservoirs",
+        "immutable": true
+      },
+      "wrapX": true,
+      "breakPointLayer": {
+        "id": "GRanD_Reservoirs",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.03515625
+          }
+        }
+      }
+    }
+  }
+}

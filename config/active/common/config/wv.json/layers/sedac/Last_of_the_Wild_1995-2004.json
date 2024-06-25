@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Last_of_the_Wild_1995-2004": {
+      "id": "Last_of_the_Wild_1995-2004",
+      "description": "sedac/Last_of_the_Wild_1995-2004",
+      "tags": "human sedac wild",
+      "group": "overlays",
+      "layergroup": "Human Footprint",
+      "wrapX": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Terra_AOD_Deep_Blue_Combined": {
+      "id": "MODIS_Terra_AOD_Deep_Blue_Combined",
+      "description": "modis/terra/MODIS_Terra_AOD_Deep_Blue_Combined",
+      "tags": "aod",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true
+    }
+  }
+}

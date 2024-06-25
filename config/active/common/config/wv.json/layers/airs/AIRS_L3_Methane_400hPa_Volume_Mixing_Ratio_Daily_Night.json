@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "AIRS_L3_Methane_400hPa_Volume_Mixing_Ratio_Daily_Night": {
+      "id": "AIRS_L3_Methane_400hPa_Volume_Mixing_Ratio_Daily_Night",
+      "description": "airs/AIRS_L3_Methane_400hPa_Volume_Mixing_Ratio_Daily_Night",
+      "tags": "",
+      "group": "overlays",
+      "wrapadjacentdays": true,
+      "layergroup": "Methane"
+    }
+  }
+}

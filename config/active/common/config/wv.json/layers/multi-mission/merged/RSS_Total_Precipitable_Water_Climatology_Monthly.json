@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "RSS_Total_Precipitable_Water_Climatology_Monthly": {
+      "id": "RSS_Total_Precipitable_Water_Climatology_Monthly",
+      "description": "multi-mission/merged/RSS_Total_Precipitable_Water_Climatology_Monthly",
+      "tags": "",
+      "layergroup": "Precipitation Rate",
+      "group": "overlays"
+    }
+  }
+}

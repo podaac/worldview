@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "Mammal_Richness_Grids_All_Threats_2013": {
+      "id": "Mammal_Richness_Grids_All_Threats_2013",
+      "description": "sedac/Mammal_Richness_Grids_All_Threats_2013",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Mammal Richness",
+      "wrapX": true
+    }
+  }
+}

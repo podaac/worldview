@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "SMAP_L1_Passive_Enhanced_Brightness_Temp_Fore_V": {
+      "id": "SMAP_L1_Passive_Enhanced_Brightness_Temp_Fore_V",
+      "description": "smap/SMAP_L1_Passive_Enhanced_Brightness_Temp_Fore_V",
+      "tags": "enhanced",
+      "group": "overlays",
+      "layergroup": "Brightness Temperature"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "LIS_TRMM_Flash_Radiance": {
+      "id": "LIS_TRMM_Flash_Radiance",
+      "description": "trmm/LIS_TRMM_Flash_Radiance",
+      "tags": "lightning",
+      "group": "overlays",
+      "layergroup": "Lightning",
+      "wrapadjacentdays": true
+    }
+  }
+}

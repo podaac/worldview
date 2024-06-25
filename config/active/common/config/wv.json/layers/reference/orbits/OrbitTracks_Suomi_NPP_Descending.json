@@ -1,0 +1,51 @@
+{
+  "layers": {
+    "OrbitTracks_Suomi_NPP_Descending": {
+      "id": "OrbitTracks_Suomi_NPP_Descending",
+      "description": "reference/orbits/OrbitTracks_Suomi_NPP_Descending",
+      "group": "overlays",
+      "tags": "snpp s-npp tracks night vector",
+      "type": "vector",
+      "period": "daily",
+      "layergroup": "Orbital Track",
+      "track": "descending",
+      "palette": {
+        "id": "OrbitTracks_Suomi_NPP_Descending",
+        "immutable": true
+      },
+      "clickDisabledFeatures": [
+        "LineString"
+      ],
+      "vectorStyle": {
+        "id": "OrbitTracks_Suomi_NPP_Descending",
+        "antarctic": {
+          "id": "OrbitTracks_Suomi_NPP_Descending_polar"
+        },
+        "arctic": {
+          "id": "OrbitTracks_Suomi_NPP_Descending_polar"
+        }
+      },
+      "modalShouldFollowClicks": true,
+      "breakPointLayer": {
+        "id": "OrbitTracks_Suomi_NPP_Descending",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.017578125
+          },
+          "antarctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:antarctic"
+          },
+          "arctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:arctic"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MOPITT_CO_Daily_Total_Column_L2": {
+      "id": "MOPITT_CO_Daily_Total_Column_L2",
+      "description": "mopitt/MOPITT_CO_Daily_Total_Column_L2",
+      "tags": "co",
+      "group": "overlays",
+      "layergroup": "Carbon Monoxide"
+    }
+  }
+}

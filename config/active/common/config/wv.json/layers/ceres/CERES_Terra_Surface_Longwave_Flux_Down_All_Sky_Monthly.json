@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "CERES_Terra_Surface_Longwave_Flux_Down_All_Sky_Monthly": {
+      "id": "CERES_Terra_Surface_Longwave_Flux_Down_All_Sky_Monthly",
+      "description": "ceres/CERES_Terra_Surface_Longwave_Flux_Down_All_Sky_Monthly",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Surface Flux"
+    }
+  }
+}

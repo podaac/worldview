@@ -1,0 +1,1 @@
+The MODIS Blue Marble, Next Generation layer with Shaded Relief is a cloud free, true color composite of MODIS imagery from August 2004 including shaded relief.

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "TRMM_Precipitation_Rate_Asc": {
+      "id": "TRMM_Precipitation_Rate_Asc",
+      "description": "trmm/TRMM_Precipitation_Rate_Asc",
+      "tags": "rain",
+      "group": "overlays",
+      "layergroup": "Precipitation Rate"
+    }
+  }
+}

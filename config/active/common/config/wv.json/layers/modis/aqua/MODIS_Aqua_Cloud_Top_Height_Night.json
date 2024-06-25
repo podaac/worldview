@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "MODIS_Aqua_Cloud_Top_Height_Night": {
+      "id": "MODIS_Aqua_Cloud_Top_Height_Night",
+      "description": "modis/aqua/MODIS_Aqua_Cloud_Top_Height_Night",
+      "group": "overlays",
+      "layergroup": "Cloud Top Height"
+    }
+  }
+}

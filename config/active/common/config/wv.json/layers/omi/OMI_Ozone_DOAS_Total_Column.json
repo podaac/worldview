@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "OMI_Ozone_DOAS_Total_Column": {
+      "id": "OMI_Ozone_DOAS_Total_Column",
+      "description": "omi/OMI_Ozone_DOAS_Total_Column",
+      "group": "overlays",
+      "layergroup": "Ozone",
+      "tags": "Differential Absorption Spectroscopy"
+    }
+  }
+}

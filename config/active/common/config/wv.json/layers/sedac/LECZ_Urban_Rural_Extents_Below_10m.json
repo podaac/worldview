@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "LECZ_Urban_Rural_Extents_Below_10m": {
+      "id": "LECZ_Urban_Rural_Extents_Below_10m",
+      "description": "sedac/LECZ_Urban_Rural_Extents_Below_10m",
+      "tags": "human sedac",
+      "group": "overlays",
+      "layergroup": "Socioeconomic",
+      "wrapX": true
+    }
+  }
+}

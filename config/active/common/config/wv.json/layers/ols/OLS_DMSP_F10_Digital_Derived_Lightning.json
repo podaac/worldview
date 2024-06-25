@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "OLS_DMSP_F10_Digital_Derived_Lightning": {
+      "id": "OLS_DMSP_F10_Digital_Derived_Lightning",
+      "description": "ols/OLS_DMSP_F10_Digital_Derived_Lightning",
+      "tags": "",
+      "group": "overlays",
+      "layergroup": "Lightning"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "MODIS_Terra_SurfaceReflectance_Bands721": {
+      "id": "MODIS_Terra_SurfaceReflectance_Bands721",
+      "description": "modis/terra/MODIS_Terra_SurfaceReflectance_Bands721",
+      "tags": "lsr m11-i2-i1 721 false color mod09",
+      "group": "baselayers",
+      "layergroup": "Land Surface Reflectance",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "TOPEX-Poseidon_JASON_Sea_Surface_Height_Anomalies_GDR_Cycles": {
+      "id": "TOPEX-Poseidon_JASON_Sea_Surface_Height_Anomalies_GDR_Cycles",
+      "description": "multi-mission/tpj/TOPEX-Poseidon_JASON_Sea_Surface_Height_Anomalies_GDR_Cycles",
+      "tags": "ssha podaac PO.DAAC",
+      "group": "overlays",
+      "layergroup": "Sea Surface Height Anomalies"
+    }
+  }
+}

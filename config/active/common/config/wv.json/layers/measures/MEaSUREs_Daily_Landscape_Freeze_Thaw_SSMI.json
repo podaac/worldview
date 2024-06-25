@@ -1,0 +1,13 @@
+{
+  "layers": {
+    "MEaSUREs_Daily_Landscape_Freeze_Thaw_SSMI": {
+      "id": "MEaSUREs_Daily_Landscape_Freeze_Thaw_SSMI",
+      "description": "ssmi/MEaSUREs_Daily_Landscape_Freeze_Thaw_SSMI",
+      "group": "overlays",
+      "layergroup": "Freeze/Thaw",
+      "palette": {
+        "immutable": false
+      }
+    }
+  }
+}

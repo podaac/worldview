@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Terra_L3_NDSI_Snow_Cover_Daily": {
+      "id": "MODIS_Terra_L3_NDSI_Snow_Cover_Daily",
+      "description": "modis/terra/MODIS_Terra_L3_NDSI_Snow_Cover_Daily",
+      "group": "overlays",
+      "layergroup": "Snow Cover",
+      "wrapadjacentdays": true
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "layers": {
+    "OrbitTracks_GOSAT-2_Ascending": {
+      "id": "OrbitTracks_GOSAT-2_Ascending",
+      "description": "reference/orbits/OrbitTracks_GOSAT-2_Ascending",
+      "group": "overlays",
+      "type": "vector",
+      "period": "daily",
+      "layergroup": "Orbital Track",
+      "track": "ascending",
+      "palette": {
+        "id": "OrbitTracks_GOSAT-2_Ascending",
+        "immutable": true
+      },
+      "tags": "tracks day vector",
+      "clickDisabledFeatures": [
+        "LineString"
+      ],
+      "vectorStyle": {
+        "id": "OrbitTracks_GOSAT-2_Ascending",
+        "antarctic": {
+          "id": "OrbitTracks_GOSAT-2_Ascending_polar"
+        },
+        "arctic": {
+          "id": "OrbitTracks_GOSAT-2_Ascending_polar"
+        }
+      },
+      "modalShouldFollowClicks": true,
+      "breakPointLayer": {
+        "id": "OrbitTracks_GOSAT-2_Ascending",
+        "type": "wms",
+        "format": "image/png",
+        "breakPointType": "max",
+        "projections": {
+          "geographic": {
+            "source": "GIBS:wms",
+            "resolutionBreakPoint": 0.017578125
+          },
+          "antarctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:antarctic"
+          },
+          "arctic": {
+            "resolutionBreakPoint": 2048,
+            "source": "GIBS:wms:arctic"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+    "measurements": {
+        "Ice Surface Temperature": {
+            "id": "ice-surface-temperature",
+            "title":    "Ice Surface Temperature",
+            "subtitle": "Aqua/MODIS, NOAA-20/VIIRS, Suomi NPP/VIIRS, Terra/MODIS",
+            "sources": {
+                "Suomi NPP/VIIRS": {
+                    "id": "suominpp-viirs",
+                    "title": "Suomi NPP/VIIRS",
+                    "description": "",
+                    "image": "",
+                    "settings": [
+                        "VIIRS_SNPP_Ice_Surface_Temp_Day",
+                        "VIIRS_SNPP_Ice_Surface_Temp_Night",
+                        "OrbitTracks_Suomi_NPP_Ascending",
+                        "OrbitTracks_Suomi_NPP_Descending"
+                    ]
+                },
+                "NOAA-20/VIIRS": {
+                    "id": "noaa20-viirs",
+                    "title": "NOAA-20/VIIRS",
+                    "description": "",
+                    "image": "",
+                    "settings": [
+                        "VIIRS_NOAA20_Ice_Surface_Temp_Day",
+                        "VIIRS_NOAA20_Ice_Surface_Temp_Night",
+                        "OrbitTracks_NOAA-20_Ascending",
+                        "OrbitTracks_NOAA-20_Descending"
+                    ]
+                },
+                    "Aqua/MODIS": {
+                        "id": "aqua-modis",
+                        "title": "Aqua/MODIS",
+                        "description": "modis/IceSurfaceTemperature",
+                        "image": "",
+                        "settings": [
+                            "MODIS_Aqua_Ice_Surface_Temp_Day",
+                            "MODIS_Aqua_Ice_Surface_Temp_Night",
+                            "MODIS_Aqua_L3_Ice_Surface_Temp_Daily_Day",
+                            "MODIS_Aqua_L3_Ice_Surface_Temp_Daily_Night",
+                            "OrbitTracks_Aqua_Descending",
+                            "OrbitTracks_Aqua_Ascending"
+                        ]
+                    },
+                    "Terra/MODIS": {
+                        "id": "terra-modis",
+                        "title": "Terra/MODIS",
+                        "description": "modis/IceSurfaceTemperature",
+                        "image": "",
+                        "settings": [
+                            "MODIS_Terra_Ice_Surface_Temp_Day",
+                            "MODIS_Terra_Ice_Surface_Temp_Night",
+                            "MODIS_Terra_L3_Ice_Surface_Temp_Daily_Day",
+                            "MODIS_Terra_L3_Ice_Surface_Temp_Daily_Night",
+                            "OrbitTracks_Terra_Descending",
+                            "OrbitTracks_Terra_Ascending"
+                        ]
+                    }
+                }
+            }
+        }
+    }

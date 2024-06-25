@@ -1,6 +1,7 @@
 {
-  "name": "worldview",
-  "version": "4.33.0",
+  "name": "@gov.nasa.jpl.podaac/worldview",
+  "version": "0.2.6-3",
+  "upstream-version": "4.33.0",
   "description": "Interactive interface for browsing full-resolution, global satellite imagery",
   "keywords": [
     "NASA",
@@ -39,6 +40,7 @@
     "dist:dev": "run-s clean getcapabilities build:config build:dev && node ./tasks/util/dist.js",
     "distclean": "npm run clean && node ./tasks/util/distclean.js",
     "docker:ci": "npm run docker:restart && docker exec -it worldview /bin/bash /build/e2e/docker-ci.sh ; npm run docker:stop",
+    "docker:ci:soto": "npm run docker:restart && docker exec -it worldview /bin/bash /build/e2e/docker-ci-soto.sh ; npm run docker:stop",
     "docker:build": "docker build -t worldview .",
     "docker:rebuild": "docker rmi -f worldview && docker build --no-cache -t worldview .",
     "docker:restart": "run-s docker:stop docker:start",
@@ -47,6 +49,7 @@
     "docker:start": "docker run --rm --name worldview --mount type=bind,source=\"$(pwd)\",target=/build --mount type=volume,target=/build/node_modules -p 3128:3000 -d worldview",
     "docker:stop": "docker stop -t 1 worldview ; true",
     "e2e": "npm run docker:restart && docker exec -it worldview /bin/bash /build/e2e/docker-ci.sh ; npm run docker:stop",
+    "e2e:soto": "npm run docker:restart && docker exec -it worldview /bin/bash /build/e2e/docker-ci-soto.sh ; npm run docker:stop",
     "getcapabilities": "bash -c 'FETCH_GC=1 npm run build:options'",
     "getcapabilities:verbose": "bash -c 'FETCH_GC=1 npm run build:options -- -v'",
     "generatePreviews": "node ./tasks/build-options/fetchPreviewSnapshots.py",

@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MLS_SO2_147hPa_Day": {
+      "id": "MLS_SO2_147hPa_Day",
+      "description": "mls/MLS_SO2_147hPa_Day",
+      "tags": "so2 sulphur",
+      "group": "overlays",
+      "layergroup": "Sulfur Dioxide"
+    }
+  }
+}

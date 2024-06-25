@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "MODIS_Aqua_Water_Vapor_5km_Day": {
+      "id": "MODIS_Aqua_Water_Vapor_5km_Day",
+      "description": "modis/aqua/MODIS_Aqua_Water_Vapor_5km_Day",
+      "group": "overlays",
+      "layergroup": "Water Vapor",
+      "wrapadjacentdays": true,
+      "palette": {
+        "recommended": [
+          "blue_1"
+        ]
+      }
+    }
+  }
+}

@@ -32,6 +32,7 @@ playwright/.cache/
 # Config
 /config/*
 !/config/default
+!/config/active
 config/default/release/gc
 config/default/release/layer-metadata
 # Jest
@@ -39,3 +40,11 @@ config/default/release/layer-metadata
 /tasks/temp
 /test-results/
 
+
+/.cache/
+/.config/
+/.local/
+/.npm/
+/.idea
+.bash_history
+/junit.xml

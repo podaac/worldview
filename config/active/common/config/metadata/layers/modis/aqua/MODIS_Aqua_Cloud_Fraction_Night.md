@@ -1,0 +1,5 @@
+The MODIS Cloud Fraction is a measure of the percentage of Earth’s surface covered by clouds. Cloud Fraction is important in determining the amount of sunlight that reaches the Earth’s surface, the amount of sunlight reflected back into space, and the amount of heat escaping from the surface and atmosphere back into space. Clouds play a very important role in the Earth’s energy budget and climate system. The MODIS Cloud Fraction layer indicates the fraction of pixels within a 25 square kilometer box (5x5 1 km pixels) that are determined to be confident or probably cloudy by the MOD/MYD35 1km x 1km Cloud Mask.
+
+The MODIS Cloud Fraction layer is available from both the Terra (MOD06) and Aqua (MYD06) satellites and for day and nighttime overpasses. The sensor/algorithm resolution is 5 km, imagery resolution is 2 km, and the temporal resolution is daily.
+
+References: MYD06_L2 NRT [doi:10.5067/MODIS/MYD06_L2.NRT.061](https://doi.org/10.5067/MODIS/MYD06_L2.NRT.061); MYD06_L2 [doi:10.5067/MODIS/MYD06_L2.061](https://doi.org/10.5067/MODIS/MYD06_L2.061); [MODIS Atmosphere - Cloud (06_L2)](https://modis-atmos.gsfc.nasa.gov/products/cloud)

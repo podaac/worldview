@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "AMSRU2_Cloud_Liquid_Water_Night": {
+      "id": "AMSRU2_Cloud_Liquid_Water_Night",
+      "description": "amsr2/AMSRU2_Cloud_Liquid_Water_Night",
+      "tags": "amsru2 amsr-u2",
+      "group": "overlays",
+      "layergroup": "Cloud Liquid Water"
+    }
+  }
+}

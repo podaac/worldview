@@ -1,0 +1,11 @@
+{
+  "layers": {
+    "MODIS_Aqua_Cloud_Optical_Thickness_16_PCL": {
+      "id": "MODIS_Aqua_Cloud_Optical_Thickness_16_PCL",
+      "description": "modis/aqua/MODIS_Aqua_Cloud_Optical_Thickness_16_PCL",
+      "group": "overlays",
+      "layergroup": "Cloud Optical Thickness",
+      "wrapadjacentdays": true
+    }
+  }
+}

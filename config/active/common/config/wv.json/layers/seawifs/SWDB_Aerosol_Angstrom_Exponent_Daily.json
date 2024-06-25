@@ -1,0 +1,12 @@
+{
+  "layers": {
+    "SWDB_Aerosol_Angstrom_Exponent_Daily": {
+      "id": "SWDB_Aerosol_Angstrom_Exponent_Daily",
+      "description": "seawifs/SWDB_Aerosol_Angstrom_Exponent_Daily",
+      "tags": "swdb",
+      "group": "overlays",
+      "layergroup": "Aerosol Optical Depth",
+      "wrapadjacentdays": true
+    }
+  }
+}
