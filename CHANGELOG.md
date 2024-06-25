@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated test cases for SOTO compatibility
 - Added parameter for assertDefaultLayers
 - Disabled some test cases for SOTO due to issue #33 and #34
-- Added new El Niño story
+- Added new El Niño story [issues/12](https://github.com/podaac/SOTO/issues/12)
 - Updated to 4.24.0 upstream version
 
 ## [0.2.5]
