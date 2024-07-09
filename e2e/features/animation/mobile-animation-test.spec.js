@@ -1,6 +1,7 @@
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { knownDate } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -22,6 +23,7 @@ test.afterAll(async () => {
 test('Clicking the animation widget button opens the widget', async () => {
   const { mobileAnimateButton } = selectors
   await page.goto(knownDate)
+  await closeModal(page)
   await mobileAnimateButton.click()
   const customIntervalInput = page.locator('.custom-interval-delta-input')
   await expect(customIntervalInput).toHaveValue('1')

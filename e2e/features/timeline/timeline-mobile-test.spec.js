@@ -1,13 +1,12 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
 
 test.describe.configure({ mode: 'serial' })
-
-test.skip(true, 'Needs to be updated for SOTO')
 
 test.beforeAll(async ({ browser }) => {
   const context = await browser.newContext({
@@ -25,6 +24,7 @@ test('date.mob.init.2a: Before 3:00 UTC: load yesterdays date', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const queryString = 'http://localhost:3000/?now=2013-03-15T0'
   await page.goto(queryString)
+  await closeModal(page)
   await expect(mobileDatePickerSelectBtn).toContainText('2013 MAR 14')
 })
 
@@ -40,6 +40,7 @@ test('date.mob.init.3a: After 3:00 UTC: load todays date', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const queryString = 'http://localhost:3000/?now=2013-03-15T4'
   await page.goto(queryString)
+  await closeModal(page)
   await expect(mobileDatePickerSelectBtn).toContainText('2013 MAR 15')
 })
 
@@ -53,6 +54,7 @@ test('date.mob.range.1: Date label should show 2013-03-15', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const queryString = 'http://localhost:3000/?now=2013-03-15T12'
   await page.goto(queryString)
+  await closeModal(page)
   await expect(mobileDatePickerSelectBtn).toContainText('2013 MAR 15')
 })
 
@@ -108,6 +110,7 @@ test('date.mob.nav.1: Date label should show 2013 JUL 20', async () => {
   const { mobileDatePickerSelectBtn } = selectors
   const queryString = 'http://localhost:3000/?now=2014-03-15&t=2013-07-20T12'
   await page.goto(queryString)
+  await closeModal(page)
   await expect(mobileDatePickerSelectBtn).toContainText('2013 JUL 20')
 })
 

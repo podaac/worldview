@@ -1,6 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -21,6 +22,7 @@ test.afterAll(async () => {
 test('Verify that settings button opens settings modal', async () => {
   const { aodSidebarLayer } = selectors
   await page.goto(customsSquashedQuerystring)
+  await closeModal(page)
   await aodSidebarLayer.hover()
   const thresholdMinLabel = await page.locator('#wv-layer-options-threshold0 .wv-label-range-min')
   const combinedAodSettingsButton = await page.locator('#active-MODIS_Combined_Value_Added_AOD .wv-layers-options')

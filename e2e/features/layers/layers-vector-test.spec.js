@@ -1,6 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -22,6 +23,7 @@ test.afterAll(async () => {
 test('Vector layer click does not show alert when all vector layers are clickable', async () => {
   const { geographicMap, notifyMessage } = selectors
   await page.goto(damsLayerUrl)
+  await closeModal(page)
   const pointerIcon = await page.locator('#active-GRanD_Dams .fa-hand-pointer')
   await expect(pointerIcon).toBeVisible()
   await geographicMap.click()
@@ -32,8 +34,11 @@ test('Vectors show alert when not clickable', async ({ browserName }) => {
   test.skip(browserName === 'firefox', 'issue identifying pointer')
   const { geographicMap, notifyMessage } = selectors
   await page.goto(damsLayerWMSZoomLevelUrl)
+  await closeModal(page)
   const pointerIcon = await page.locator('#active-GRanD_Dams .fa-hand-pointer')
   await expect(pointerIcon).toBeVisible()
+  await geographicMap.click()
+  await page.waitForTimeout(500)
   await geographicMap.click()
   await expect(notifyMessage).toBeVisible()
   await expect(notifyMessage).toContainText('Vector features may not be clickable at all zoom levels.')

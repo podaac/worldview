@@ -4,7 +4,8 @@ const {
   clickDownload,
   closeImageDownloadPanel,
   openImageDownloadPanel,
-  switchProjections
+  switchProjections,
+  closeModal
 } = require('../../test-utils/hooks/wvHooks')
 const {
   getAttribute,
@@ -13,7 +14,6 @@ const {
 } = require('../../test-utils/hooks/basicHooks')
 
 let page
-
 const startParams = [
   'l=MODIS_Terra_CorrectedReflectance_TrueColor',
   'v=-1,-1,1,1',
@@ -34,6 +34,7 @@ test.afterAll(async () => {
 test('JPEG is the default', async () => {
   const url = await joinUrl(startParams, null)
   await page.goto(url)
+  await closeModal(page)
   await openImageDownloadPanel(page)
   await clickDownload(page)
   const urlAttribute = await getAttribute(page, '#wv-image-download-url', 'url')

@@ -2,13 +2,12 @@
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { swipeAndAIsActive, spyAndBIsActive } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
 
 test.describe.configure({ mode: 'serial' })
-
-test.skip(true, 'Needs to be updated for SOTO')
 
 test.beforeAll(async ({ browser }) => {
   page = await browser.newPage()
@@ -22,6 +21,7 @@ test.afterAll(async () => {
 test('Animation is disabled when compare mode active', async () => {
   const { animationButtonCase, animationWidget } = selectors
   await page.goto(swipeAndAIsActive)
+  await closeModal(page)
   await expect(animationButtonCase).toHaveClass(/wv-disabled-button/)
   const disableMessage = 'Animation feature is deactivated when Compare feature is active'
   await expect(animationButtonCase).toHaveAttribute('aria-label', disableMessage)
@@ -86,6 +86,7 @@ test('Removing layer removes correct layer from correct layer group', async () =
 test('Collapse layer list with B state and test label shows correct number of layers', async () => {
   const { toggleButton, collapsedToggleButton } = selectors
   await page.goto(spyAndBIsActive)
+  await closeModal(page)
   await expect(collapsedToggleButton).not.toBeVisible()
   await toggleButton.click()
   await expect(collapsedToggleButton).toBeVisible()

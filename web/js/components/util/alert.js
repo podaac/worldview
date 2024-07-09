@@ -47,6 +47,7 @@ export default class AlertUtil extends React.Component {
       id,
       title,
       message,
+      messageTitle,
       icon,
       onDismiss,
       onClick,
@@ -70,8 +71,13 @@ export default class AlertUtil extends React.Component {
             className="wv-alert-icon"
             size="1x"
           />
-          <div className="wv-alert-message">
-            {message}
+          <div className="alert-text">
+            <p className="wv-alert-title">
+              {messageTitle}
+            </p>
+            <em className="wv-alert-message">
+              <b>{message}</b>
+            </em>
           </div>
         </div>
         {onDismiss && (
@@ -89,9 +95,11 @@ export default class AlertUtil extends React.Component {
 
   render() {
     const { noPortal } = this.props;
-    return noPortal
-      ? this.renderAlert()
-      : createPortal(this.renderAlert(), document.getElementById('wv-alert-container'));
+    const alertContainer = document.getElementById('wv-alert-container');
+    if (!noPortal && alertContainer) {
+      return createPortal(this.renderAlert(), document.getElementById('wv-alert-container'));
+    }
+    return this.renderAlert();
   }
 }
 
@@ -104,6 +112,7 @@ AlertUtil.propTypes = {
   id: PropTypes.string,
   isOpen: PropTypes.bool,
   message: PropTypes.string,
+  messageTitle: PropTypes.string,
   noPortal: PropTypes.bool,
   onClick: PropTypes.func,
   onDismiss: PropTypes.func,

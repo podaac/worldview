@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
-const { assertLayerOrdering } = require('../../test-utils/hooks/wvHooks')
+const { assertLayerOrdering, closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -52,6 +52,7 @@ test('Toggle layer Info', async () => {
     infoDialog
   } = selectors
   await page.goto(twoGroupsQueryString)
+  await closeModal(page)
   await firesLayer.hover()
   await infoButton.click()
   await infoButton.click()
@@ -74,13 +75,14 @@ test('Layer groups are enabled by default', async () => {
 test('Adding a layer causes it to appear in the appropriate group', async () => {
   const {
     addLayers,
-    layersSearchField,
-    viirsFiresCheckbox,
-    layersModalCloseButton,
     firesGroup,
-    firesLayer
+    firesLayer,
+    layersModalCloseButton,
+    layersSearchField,
+    viirsFiresCheckbox
   } = selectors
   await page.goto(someGroupsQueryString)
+  await closeModal(page)
   await addLayers.click()
   await layersSearchField.fill('fires')
   await viirsFiresCheckbox.click()
@@ -126,6 +128,7 @@ test('Removing the last layer in a group removes the group', async () => {
 test('Removing a group removes all layers and the group header', async () => {
   const { aodGroupHeader, aodGroup } = selectors
   await page.goto(twoGroupsQueryString)
+  await closeModal(page)
   await aodGroupHeader.hover()
   await page.locator('#active-Aerosol_Optical_Depth .layer-group-more-options > button').click()
   await page.locator('#active-Aerosol_Optical_Depth .layer-group-more-options #remove-group').click()
@@ -134,12 +137,13 @@ test('Removing a group removes all layers and the group header', async () => {
 
 test('Load with groups disabled from permalink', async () => {
   const {
-    groupCheckbox,
-    firesGroup,
     aodGroup,
+    firesGroup,
+    groupCheckbox,
     overlaysGroup
   } = selectors
   await page.goto(mixedLayersGroupsDisabledQueryString)
+  await closeModal(page)
   await expect(groupCheckbox).toBeVisible()
   await expect(groupCheckbox).not.toBeChecked()
   await expect(firesGroup).not.toBeVisible()
@@ -151,11 +155,12 @@ test('Load with groups disabled from permalink', async () => {
 
 test('Load multiple groups from permalink', async () => {
   const {
-    groupCheckbox,
+    aodGroup,
     firesGroup,
-    aodGroup
+    groupCheckbox
   } = selectors
   await page.goto(twoGroupsQueryString)
+  await closeModal(page)
   await expect(groupCheckbox).toBeVisible()
   await expect(groupCheckbox).toBeChecked()
   await expect(firesGroup).toBeVisible()
@@ -214,6 +219,7 @@ test('Re-ordering groups, then disabling groups keeps individual layer order', a
     groupCheckbox
   } = selectors
   await page.goto(twoGroupsQueryString)
+  await closeModal(page)
   const aodBoundingBox = await aodGroupHeader.boundingBox()
   const firesBoundingBox = await firesGroupHeader.boundingBox()
   // this 'steps' option is important for making the drag action work with the 'react-draggable' library
@@ -240,6 +246,7 @@ test('Enabling groups re-orders layers into their groups', async () => {
     groupCheckbox
   } = selectors
   await page.goto(mixedLayersGroupsDisabledQueryString)
+  await closeModal(page)
   const layersContainer = '#active-overlays li'
   await assertLayerOrdering(page, layersContainer, mixedLayerIdOrder)
   await groupCheckbox.click()
@@ -265,6 +272,7 @@ test('Immediately disabling groups restores mixed ordering', async () => {
 test('Making a change to grouped layers causes group ordering to be retained when ungrouped', async () => {
   const { groupCheckbox, aodGroupHeader } = selectors
   await page.goto(mixedLayersGroupsDisabledQueryString)
+  await closeModal(page)
   await groupCheckbox.click()
   await aodGroupHeader.hover()
   await page.locator('#active-Aerosol_Optical_Depth .layer-group-more-options > button').click()
@@ -276,6 +284,7 @@ test('Making a change to grouped layers causes group ordering to be retained whe
 
 test('Vector layer has pointer icon & clicking vector layer pointer shows modal', async () => {
   await page.goto(vectorsQueryString)
+  await closeModal(page)
   const handPointer = await page.locator('#active-GRanD_Dams .fa-hand-pointer')
   await expect(handPointer).toBeVisible()
   await handPointer.click()

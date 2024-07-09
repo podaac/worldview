@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
-const { closeImageDownloadPanel } = require('../../test-utils/hooks/wvHooks')
+const { closeImageDownloadPanel, closeModal } = require('../../test-utils/hooks/wvHooks')
 const { joinUrl } = require('../../test-utils/hooks/basicHooks')
 
 let page
@@ -32,6 +32,7 @@ test('Custom palettes are not supported dialog', async () => {
   const { snapshotToolbarButton } = selectors
   const url = await joinUrl(startParams, '&l=MODIS_Terra_Aerosol(palette=red_1)')
   await page.goto(url)
+  await closeModal(page)
   await snapshotToolbarButton.click()
   await expect(notify).toBeVisible()
 })
@@ -56,6 +57,7 @@ test('Rotation is not supported dialog', async () => {
   const { snapshotToolbarButton } = selectors
   const url = await joinUrl(startParams, '&p=arctic&r=18')
   await page.goto(url)
+  await closeModal(page)
   await snapshotToolbarButton.click()
   await expect(notify).toBeVisible()
 })

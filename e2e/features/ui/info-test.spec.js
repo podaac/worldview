@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { skipTour } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -20,6 +21,7 @@ test.afterAll(async () => {
 test('Info toolbar is visible and contains valid menu items', async () => {
   const { infoToolbarButton } = selectors
   await page.goto(skipTour)
+  await closeModal(page)
   const sendFeedback = await page.locator('#send_feedback_info_item')
   const startTour = await page.locator('#start_tour_info_item')
   const settingsInfo = await page.locator('#settings_info_item')

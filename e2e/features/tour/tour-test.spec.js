@@ -2,6 +2,7 @@
 const { test } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { skipTour } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -20,6 +21,7 @@ test.afterAll(async () => {
 test('Verify that all tour modals are present when the page is loaded', async () => {
   const { infoToolbarButton } = selectors
   await page.goto(skipTour)
+  await closeModal(page)
   await infoToolbarButton.click()
   await page.locator('#start_tour_info_item').click()
 })

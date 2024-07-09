@@ -95,6 +95,10 @@
 }
 
 .modal-content {
+  .modal-header {
+    justify-content: space-between;
+  }
+
   border: none;
   border-radius: 6px;
 }
@@ -204,4 +208,9 @@
 
 .modal-dialog.light .modal-body {
   background: #eee;
+}
+
+.modal-backdrop.show {
+  opacity: 0 !important;
+  background-color: transparent !important;
 }

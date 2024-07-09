@@ -68,7 +68,7 @@
             "Canopy Characteristics",
             "Carbon Dioxide",
             "Carbon Monoxide",
-            "Chlorophyll A",
+            "Chlorophyll a",
             "Cirrus Reflectance",
             "Clear Sky Confidence",
             "Cloud Albedo",
@@ -86,6 +86,10 @@
             "Corrected Reflectance",
             "Cyclone Hazard",
             "DHR Reflectance",
+            "AERONET_AOD_500NM",
+            "AERONET_ANGSTROM_440-870NM",
+            "DAILY_AERONET_AOD_500NM",
+            "DAILY_AERONET_ANGSTROM_440-870NM",
             "Dams",
             "Drought Hazard",
             "Dust",
@@ -124,6 +128,7 @@
             "Liquid Water Equivalent",
             "Mammal Richness",
             "Methane",
+            "Moisture Indices",
             "Net Ecosystem CO2 Exchange",
             "Net Migration",
             "Nitric Acid",
@@ -158,6 +163,7 @@
             "Snow Cover",
             "Snow Depth",
             "Snow Extent",
+            "Snow Indices",
             "Snow Mass",
             "Snow Water Equivalent",
             "Socioeconomic",
@@ -180,6 +186,7 @@
             "Vegetation Light Use Efficiency",
             "Volcano Hazard",
             "Water Bodies",
+            "Water Indices",
             "Water Vapor",
             "Wind Speed"
           ]
@@ -351,7 +358,8 @@
         "wms",
         "wmts",
         "vector",
-        "granule"
+        "granule",
+        "titiler"
       ]
     },
     "format": {

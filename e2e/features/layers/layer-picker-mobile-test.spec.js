@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
-const { assertDefaultLayers, assertCategories } = require('../../test-utils/hooks/wvHooks')
+const { assertDefaultLayers, assertCategories, closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -9,8 +9,6 @@ let selectors
 const url = 'http://localhost:3000/?t=2013-05-15'
 
 test.describe.configure({ mode: 'serial' })
-
-test.skip(true, 'Needs to be updated for SOTO')
 
 test.beforeAll(async ({ browser }) => {
   const context = await browser.newContext({
@@ -27,8 +25,9 @@ test.afterAll(async () => {
 test('Initial state indicates layer count', async () => {
   const { layerCount } = selectors
   await page.goto(url)
+  await closeModal(page)
   await expect(layerCount).toBeVisible()
-  await expect(layerCount).toContainText('7')
+  await expect(layerCount).toContainText('8')
 })
 
 test('Expand layer list and show default layers', async () => {
@@ -46,20 +45,22 @@ test('Open product picker and show categories by default', async () => {
 test('Clicking a measurement shows choices, indicates unavailability', async () => {
   const {
     aodAllMeasurement,
+    aquaTerraMODISTab,
     sourceMetadataCollapsed,
     aodCheckboxMAIAC,
     aodCheckboxMODIS,
     sourceTabs
   } = selectors
   await aodAllMeasurement.click()
+  await aquaTerraMODISTab.click()
   await expect(sourceMetadataCollapsed).toBeVisible()
   await expect(aodCheckboxMAIAC).toBeVisible()
   await expect(aodCheckboxMODIS).toBeVisible()
   const modisAvailableCoverage = page.locator('#MODIS_Combined_Value_Added_AOD-checkbox + svg#availability-info')
-  const maiacAvailableCoverage = page.locator('#MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth-checkbox + svg#availability-info')
+  // const maiacAvailableCoverage = page.locator('#MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth-checkbox + svg#availability-info')
   await expect(modisAvailableCoverage).toBeVisible()
-  await expect(maiacAvailableCoverage).toBeVisible()
-  await expect(sourceTabs).toHaveCount(8)
+  // await expect(maiacAvailableCoverage).toBeVisible()
+  await expect(sourceTabs).toHaveCount(10)
 })
 
 test('Available grid source layer measuremet does not have unavaiable coverage class', async () => {
@@ -141,7 +142,7 @@ test('Searching for layers', async () => {
     aodCheckbox
   } = selectors
   await layersSearchField.fill('aerosol optical depth')
-  await expect(layersSearchRow).toHaveCount(17)
+  await expect(layersSearchRow).toHaveCount(19)
   await expect(aodCheckbox).toBeVisible()
 })
 
@@ -179,14 +180,14 @@ test('Clicking the selected row deselects it and hides the details', async () =>
 })
 
 test('Close product picker and confirm added layers show in sidebar', async () => {
-  const { layersModalCloseButton } = selectors
-  await layersModalCloseButton.click()
+  await closeModal(page)
   const activeLayer = page.locator('#active-MODIS_Aqua_Aerosol')
   await expect(activeLayer).toBeVisible()
 })
 
 test('Collapse sidebar and confirm layer count updated', async () => {
   const { layerCount } = selectors
+  await page.locator('.layer-btn-close').click()
   await page.locator('#toggleIconHolder').click()
-  await expect(layerCount).toContainText('8')
+  await expect(layerCount).toContainText('9')
 })

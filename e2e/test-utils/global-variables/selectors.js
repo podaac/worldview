@@ -84,6 +84,14 @@ module.exports = (page) => ({
   toggleButton: page.locator('#toggleIconHolder'),
   collapsedToggleButton: page.locator('#accordion-toggler-button'),
 
+  // charting
+  chartingButton: page.locator('#chart-toggle-button'),
+  chartingAoiIcon: page.locator('#wv-charting-mode-container > div.charting-aoi-container > svg'),
+  chartingDateSingleButton: page.locator('#charting-date-single-button'),
+  chartingDateRangeButton: page.locator('#charting-date-range-button'),
+  chartingCalendarIcon: page.locator('#charting-calendar-container > svg'),
+  chartingInfoIcon: page.locator('#charting-info-container > svg'),
+
   // measure
   measureBtn: page.locator('#wv-measure-button'),
   measureMenu: page.locator('#measure_menu'),
@@ -146,8 +154,8 @@ module.exports = (page) => ({
   aodCheckboxMODIS: page.locator('#MODIS_Combined_Value_Added_AOD-checkbox'),
   aodCheckboxMAIAC: page.locator('#MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth-checkbox'),
   aodCheckboxAquaMODIS: page.locator('#MODIS_Aqua_Aerosol-checkbox'),
-  aquaTerraMODISTab: page.locator('#aqua-terra-modis-0-source-Nav'),
-  aquaModisTab: page.locator('#aqua-modis-1-source-Nav'),
+  aquaTerraMODISTab: page.locator('#aqua-terra-modis-1-source-Nav'),
+  aquaModisTab: page.locator('#aqua-modis-2-source-Nav'),
   correctedReflectanceCheckboxContainer: page.locator('#checkbox-case-MODIS_Aqua_CorrectedReflectance_TrueColor'),
   correctedReflectanceChecked: page.locator('#checkbox-case-MODIS_Aqua_CorrectedReflectance_TrueColor .wv-checkbox.checked'),
   weldReflectanceCheckboxContainer: page.locator('#checkbox-case-Landsat_WELD_CorrectedReflectance_TrueColor_Global_Monthly'),
@@ -200,6 +208,7 @@ module.exports = (page) => ({
   projToolbarButton: page.locator('#wv-proj-button'),
   snapshotToolbarButton: page.locator('#wv-image-button'),
   infoToolbarButton: page.locator('#wv-info-button'),
+  distractionFreeExitBtn: page.locator('#wv-exit-distraction-free-mode-button'),
 
   // share
   shareToolbar: page.locator('#toolbar_share'),

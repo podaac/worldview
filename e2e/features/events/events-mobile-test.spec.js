@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { mockEvents, stormEventSelected } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -26,7 +27,7 @@ test('Events populated in sidebar', async ({ browserName }) => {
   test.skip(browserName === 'firefox', 'firefox cant find iceberg event sometimes')
   const { sidebarButton, sidebarContent, eventsTab, icebergEvent } = selectors
   await page.goto(mockEvents)
-  await page.waitForLoadState('networkidle')
+  await closeModal(page)
   await sidebarButton.click()
   await expect(sidebarContent).toBeVisible()
   await eventsTab.click()
@@ -47,6 +48,7 @@ test('Events load when arriving via permalink', async ({ browserName }) => {
   test.skip(browserName === 'firefox', 'firefox cant find iceberg event sometimes')
   const { sidebarButton, sidebarContent, selectedMarker } = selectors
   await page.goto(stormEventSelected)
+  await closeModal(page)
   await expect(selectedMarker).toBeVisible()
   await expect(sidebarContent).not.toBeVisible()
   await expect(sidebarButton).toBeVisible()

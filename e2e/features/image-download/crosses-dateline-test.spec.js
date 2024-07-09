@@ -1,5 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 
@@ -9,16 +10,17 @@ const crossesNextDayURLParams = 'http://localhost:3000/?v=-198.76946733086245,-5
 
 test.describe.configure({ mode: 'serial' })
 
-test.beforeAll(async ({ browser }) => {
+test.beforeEach(async ({ browser }) => {
   page = await browser.newPage()
 })
 
-test.afterAll(async () => {
+test.afterEach(async () => {
   await page.close()
 })
 
 test('No dateline alert notification with message if not crossing dateline(s)', async () => {
   await page.goto(withinMapURLParams)
+  await closeModal(page)
   await page.locator('#wv-image-button').click()
   const datelineAlert = page.locator('#snapshot-dateline-alert')
   await expect(datelineAlert).not.toBeVisible()
@@ -26,6 +28,7 @@ test('No dateline alert notification with message if not crossing dateline(s)', 
 
 test('Dateline alert notification with previous day message if crosses previous day dateline', async () => {
   await page.goto(crossesPrevDayURLParams)
+  await closeModal(page)
   await page.locator('#wv-image-button').click()
   const datelineAlert = page.locator('#snapshot-dateline-alert')
   const datelineAlertMessage = page.locator('#snapshot-dateline-alert .wv-alert-message')
@@ -35,6 +38,7 @@ test('Dateline alert notification with previous day message if crosses previous 
 
 test('Dateline alert notification with next day message if crosses next day dateline', async () => {
   await page.goto(crossesNextDayURLParams)
+  await closeModal(page)
   await page.locator('#wv-image-button').click()
   const datelineAlert = page.locator('#snapshot-dateline-alert')
   const datelineAlertMessage = page.locator('#snapshot-dateline-alert .wv-alert-message')

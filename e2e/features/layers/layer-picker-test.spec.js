@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
-const { assertCategories, switchProjections } = require('../../test-utils/hooks/wvHooks')
+const { assertCategories, switchProjections, closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -9,8 +9,6 @@ let selectors
 const url = 'http://localhost:3000/?t=2013-05-15'
 
 test.describe.configure({ mode: 'serial' })
-
-test.skip(true, 'Needs to be updated for SOTO')
 
 test.beforeAll(async ({ browser }) => {
   page = await browser.newPage()
@@ -24,6 +22,7 @@ test.afterAll(async () => {
 test('Layer picker shows categories when first opened', async () => {
   const { addLayers } = selectors
   await page.goto(url)
+  await closeModal(page)
   await addLayers.click()
   await assertCategories(page)
 })
@@ -46,7 +45,7 @@ test('"Unavailable" layers show unavailable icon and tooltip', async () => {
 test('Entering search text transitions to search mode', async () => {
   const { layersSearchField, layersSearchRow } = selectors
   await layersSearchField.fill('ozone')
-  await expect(layersSearchRow).toHaveCount(6)
+  await expect(layersSearchRow).toHaveCount(10)
 })
 
 test('Updating input changes results', async () => {
@@ -97,8 +96,8 @@ test('"Available 2013 May 15" filter removes items not available from list, adds
   await expect(tooltip).toBeVisible()
   await layerPickerBackButton.hover()
   await availableFilterCheckbox.click()
-  await expect(layersSearchRow).toHaveCount(4)
-  await expect(layerResultsCountText).toContainText('Showing 4 out of')
+  await expect(layersSearchRow).toHaveCount(5)
+  await expect(layerResultsCountText).toContainText('Showing 5 out of')
   const filterChip = await page.locator('.filter-chip')
   await expect(filterChip).toHaveCount(1)
 })
@@ -114,15 +113,15 @@ test('Closing and reopening layer picker restores state.', async () => {
     layerDetails,
     layerDetailsDateRange
   } = selectors
-  await page.locator('.product-outter-list-case .search-row:nth-child(1)').click()
-  await expect(layerDetailHeader).toContainText('Corrected Reflectance')
+  await page.locator('.product-outer-list-case .search-row:nth-child(1)').click()
+  await expect(layerDetailHeader).toContainText('Land Surface Reflectance(True Color)Suomi NPP / VIIRS')
   await layersModalCloseButton.click()
   await expect(layersAll).not.toBeVisible()
   await addLayers.click()
-  await expect(layersSearchRow).toHaveCount(4)
-  await expect(layerResultsCountText).toContainText('Showing 4 out of')
+  await expect(layersSearchRow).toHaveCount(5)
+  await expect(layerResultsCountText).toContainText('Showing 5 out of')
   await expect(layerDetails).toBeVisible()
-  await expect(layerDetailHeader).toContainText('Corrected Reflectance')
+  await expect(layerDetailHeader).toContainText('Land Surface Reflectance(True Color)Suomi NPP / VIIRS')
   await expect(layerDetailsDateRange).toBeVisible()
   const filterChip = await page.locator('.filter-chip')
   await expect(filterChip).toHaveCount(1)
@@ -156,8 +155,8 @@ test('Disabling coverage filter updates list', async () => {
   } = selectors
   await availableFilterCheckbox.click()
   await expect(availableFilterCheckboxInput).not.toBeChecked()
-  await expect(layersSearchRow).toHaveCount(10)
-  await expect(layerResultsCountText).toContainText('Showing 10 out of')
+  await expect(layersSearchRow).toHaveCount(14)
+  await expect(layerResultsCountText).toContainText('Showing 14 out of')
 })
 
 test('Finding layer by ID with search', async () => {
@@ -205,18 +204,20 @@ test('Switching to "Science Disciplines" tab updates category/measurement choice
 test('Selecting a measurement from the grid shows sources and details for first source', async () => {
   const {
     aodMeasurement,
+    aquaTerraMODISTab,
     layerDetailHeader,
     aodCheckboxMODIS,
     aodCheckboxMAIAC
   } = selectors
   await aodMeasurement.click()
+  await aquaTerraMODISTab.click()
   await expect(layerDetailHeader).toContainText('Aqua and Terra/MODIS')
   await expect(aodCheckboxMODIS).toBeVisible()
   await expect(aodCheckboxMAIAC).toBeVisible()
   const modisAvailableCoverage = page.locator('#MODIS_Combined_Value_Added_AOD-checkbox + svg#availability-info')
-  const maiacAvailableCoverage = page.locator('#MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth-checkbox + svg#availability-info')
+  // const maiacAvailableCoverage = page.locator('#MODIS_Combined_MAIAC_L2G_AerosolOpticalDepth-checkbox + svg#availability-info')
   await expect(modisAvailableCoverage).toBeVisible()
-  await expect(maiacAvailableCoverage).toBeVisible()
+  // await expect(maiacAvailableCoverage).toBeVisible()
 })
 
 test('Available grid source layer measuremet does not have unavaiable coverage icon', async () => {
@@ -255,7 +256,7 @@ test('Collapsed sidebar shows updated layer count', async () => {
   const { collapsedLayerButton } = selectors
   await page.locator('#toggleIconHolder').click()
   const layerCount = await page.locator('.layer-count')
-  await expect(layerCount).toContainText('9 Layers')
+  await expect(layerCount).toContainText('10 Layers')
   await collapsedLayerButton.click()
 })
 
@@ -278,8 +279,8 @@ test('Searching in arctic projection', async () => {
     layersModalCloseButton
   } = selectors
   await layersSearchField.fill('sea')
-  await expect(layersSearchRow).toHaveCount(15)
-  await expect(layerResultsCountText).toContainText('Showing 15 out of')
+  await expect(layersSearchRow).toHaveCount(17)
+  await expect(layerResultsCountText).toContainText('Showing 17 out of')
   await layerPickerBackButton.click()
   await expect(layerBrowseDetail).toBeVisible()
   await layersModalCloseButton.click()

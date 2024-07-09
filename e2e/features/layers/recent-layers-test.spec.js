@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
-const { assertCategories } = require('../../test-utils/hooks/wvHooks')
+const { assertCategories, closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -9,8 +9,6 @@ let selectors
 const url = 'http://localhost:3000/?t=2020-07-04'
 
 test.describe.configure({ mode: 'serial' })
-
-test.skip(true, 'Needs to be updated for SOTO')
 
 test.beforeAll(async ({ browser }) => {
   page = await browser.newPage()
@@ -24,6 +22,7 @@ test.afterAll(async () => {
 test('Layer picker shows categories when first opened', async () => {
   const { addLayers } = selectors
   await page.goto(url)
+  await closeModal(page)
   await addLayers.click()
   await assertCategories(page)
 })
@@ -60,7 +59,7 @@ test('Removing individual layers updates the list', async () => {
 
 test('Clear list button empties the entire list', async () => {
   await page.locator('#clear-recent-layers').click()
-  const productList = await page.locator('.product-outter-list-case.layers-all')
+  const productList = await page.locator('.product-outer-list-case.layers-all')
   const noResults = await page.locator('.no-results')
   await expect(productList).not.toBeVisible()
   await expect(noResults).toBeVisible()

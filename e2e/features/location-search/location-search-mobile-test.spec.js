@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { skipTour } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -23,6 +24,7 @@ test.afterAll(async () => {
 test('Location Search component is visible by default', async () => {
   const { locationSearchMobileDialog } = selectors
   await page.goto(skipTour)
+  await closeModal(page)
   await expect(locationSearchMobileDialog).not.toBeVisible()
 })
 

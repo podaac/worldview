@@ -17,11 +17,13 @@
                     "Land Cover",
                     "Leaf Area Index",
                     "Mammal Richness",
+                    "Moisture Indices",
                     "Net Ecosystem CO2 Exchange",
                     "Photosynthesis, Net",
                     "Photosynthetically Available Radiation",
                     "FPAR",
                     "Solar Induced Chlorophyll Fluorescence",
+                    "Vegetation Disturbance Status",
                     "Vegetation Indices",
                     "Vegetation Light Use Efficiency"
                 ]

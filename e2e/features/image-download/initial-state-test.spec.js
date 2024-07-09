@@ -5,7 +5,8 @@ const createSelectors = require('../../test-utils/global-variables/selectors')
 const {
   openImageDownloadPanel,
   closeImageDownloadPanel,
-  switchProjections
+  switchProjections,
+  closeModal
 } = require('../../test-utils/hooks/wvHooks')
 
 let page
@@ -31,6 +32,7 @@ test.afterAll(async () => {
 test('Check resolutions', async () => {
   const { imageResolution } = selectors
   await page.goto(skipTour)
+  await closeModal(page)
   await openImageDownloadPanel(page)
   await expect(imageResolution).toContainText(expectedResolutions)
 })
@@ -59,7 +61,6 @@ test('Check arctic formats', async () => {
 })
 
 test('Check antarctic formats', async () => {
-  test.skip(true, 'Needs to be updated for SOTO')
   const { imageFormat } = selectors
   await closeImageDownloadPanel(page)
   await switchProjections(page, 'antarctic')

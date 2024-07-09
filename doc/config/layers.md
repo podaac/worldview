@@ -104,13 +104,15 @@ Example:
   * **id**: Identifier of the palette. This should match the name of the colormap file without the extension.
   * **recommended**: Array of custom palette identifiers that are recommended for use with this layer (see [`config/default/common/config/palettes-custom.json`](../../config/default/common/config/palettes-custom.json)). Example, *["orange_1", "red_1"]*
   * **immutable**(optional): When this flag is set to true, the options to adjust thresholds and colormaps are removed.
-* **availability**: Used to denote datetime availability info that cannot be gleaned from the capabilities document. Primarily for our geostationary layers which only have historical coverage going back ~30 days. Represented as an object with the following properties:
+* **availability**: Used to denote datetime availability info that cannot be gleaned from the capabilities document. Primarily for our geostationary layers which only have historical coverage going back ~90 days. Represented as an object with the following properties:
   * **rollingWindow**: Number of days, counting backwards from app load time, that a layer has available coverage.  Setting this will cause a layer's `startDate` property to be dynamically set at app load time.
   * **historicalRanges**: An array of date range objects denoting specific time periods in the past when imagery is available. Each range object should have the following properties:
     * startDate - `YYYY-MM-DDTHH:MM:SSZ`
     * endDate - `YYYY-MM-DDTHH:MM:SSZ`
     * dateInterval - Number of days (or minutes for subdaily layers)
 * **temporal**: Used to override the layer temporal availability declared in the capabilities document. Note: Changing the temporal availability can cause missing layer coverage within the interface for layers tiles that aren't available from the source at the revised temporal range. This option can be added as a string with the new availability range. For example, `"1981-10-13/2019-10-11/P1M"`.
+* **count**: Used to override the default number of granules displayed on the map and in the granule count slider component for granule layers.
+* **cmrAvailability**: Boolean - Whether or not to use the CMR API for data availability.
 
 ## Full Example
 
@@ -133,7 +135,8 @@ Example:
       "palette": {
         "id": "AIRS_RH400_A"
       },
-      "temporal": "1981-10-13/2019-10-11/P1M"
+      "temporal": "1981-10-13/2019-10-11/P1M",
+      "cmrAvailability": false
     }
   }
 }
@@ -161,7 +164,9 @@ Granule layers will require specific configuration options within the `config/wv
       ],
       "ongoing": true,
       "type": "granule",
-      "period": "subdaily"
+      "cmrAvailability": true,
+      "period": "subdaily",
+      "count": 1
     }
   }
 }

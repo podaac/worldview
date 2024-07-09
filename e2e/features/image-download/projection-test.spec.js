@@ -3,12 +3,14 @@ const { test, expect } = require('@playwright/test')
 const {
   openImageDownloadPanel,
   closeImageDownloadPanel,
-  clickDownload
+  clickDownload,
+  closeModal
 } = require('../../test-utils/hooks/wvHooks')
 const { joinUrl, getAttribute } = require('../../test-utils/hooks/basicHooks')
 const { switchProjections } = require('../../test-utils/hooks/wvHooks')
 
 let page
+
 const startParams = [
   'l=MODIS_Terra_CorrectedReflectance_TrueColor',
   't=2018-06-01',
@@ -28,6 +30,7 @@ test.afterAll(async () => {
 test('Geographic is EPSG:4326', async () => {
   const url = await joinUrl(startParams, null)
   await page.goto(url)
+  await closeModal(page)
   await openImageDownloadPanel(page)
   await clickDownload(page)
   const urlAttribute = await getAttribute(page, '#wv-image-download-url', 'url')

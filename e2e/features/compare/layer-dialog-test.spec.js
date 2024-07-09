@@ -2,6 +2,7 @@
 const { test, expect } = require('@playwright/test')
 const createSelectors = require('../../test-utils/global-variables/selectors')
 const { swipeAOD } = require('../../test-utils/global-variables/querystrings')
+const { closeModal } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
@@ -29,11 +30,12 @@ test.afterAll(async () => {
 
 test('Layer option features work in A|B mode', async () => {
   await page.goto(swipeAOD)
+  await closeModal(page)
   await expect(AodOptionsPanelBody).not.toBeVisible()
   await aerosolLayer.hover()
   await page.locator('#active-MODIS_Terra_Aerosol .wv-layers-options').click()
   const modalTitle = page.locator('#layer_options_modal-modis_terra_aerosol .modal-header .modal-title')
-  await expect(modalTitle).toHaveText('Aerosol Optical Depth')
+  await expect(modalTitle).toHaveText('Dark Target Aerosol Optical Depth (Land and Ocean)')
   const paletteSelector = page.locator('#layer_options_modal-modis_terra_aerosol .modal-body .wv-palette-selector')
   await expect(paletteSelector).toBeVisible()
 })

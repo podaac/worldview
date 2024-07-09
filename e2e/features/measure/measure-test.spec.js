@@ -6,15 +6,14 @@ const { getAttribute } = require('../../test-utils/hooks/basicHooks')
 const {
   createDistanceMeasurement,
   createAreaMeasurement,
-  switchProjections
+  switchProjections,
+  closeModal
 } = require('../../test-utils/hooks/wvHooks')
 
 let page
 let selectors
 
 test.describe.configure({ mode: 'serial' })
-
-test.skip(true, 'Needs to be updated for SOTO')
 
 test.beforeAll(async ({ browser }) => {
   const context = await browser.newContext({
@@ -32,6 +31,7 @@ test('Clicking the measure button opens the menu', async ({ browserName }) => {
   test.skip(browserName === 'firefox', 'firefox pointer issue')
   const { measureMenu, measureBtn } = selectors
   await page.goto(skipTour)
+  await closeModal(page)
   await expect(measureMenu).not.toBeVisible()
   await measureBtn.click()
 })
