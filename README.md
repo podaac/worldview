@@ -1,3 +1,16 @@
+## ⚠️ This Project Has Been Retired
+
+The PO.DAAC State of the Ocean (SOTO) tool has been officially retired and this repository has been archived. No further updates, bug fixes, or support will be provided.
+
+### ➡️ Use NASA Worldview Instead
+
+We encourage you to use **[NASA Worldview – SOTO Portal](https://go.nasa.gov/soto)** as the recommended alternative. This link is configured to make Worldview behave like the legacy SOTO experience.
+
+Please update any saved bookmarks to:
+`https://go.nasa.gov/soto`
+
+If you have questions or need help getting started, visit the **[PO.DAAC Forum](https://forum.earthdata.nasa.gov/viewtopic.php?t=7460)**.
+***
 # [Worldview](https://worldview.earthdata.nasa.gov)
 
 [![Worldview Screenshot](/web/images/readme-preview.jpg)](https://worldview.earthdata.nasa.gov)
